@@ -1,0 +1,44 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_install
+ */
+function ead_install() {
+  drupal_install_schema('ead');
+ }
+
+/**
+ * Implementation of ead_uninstall
+ */
+function ead_uninstall() {
+  drupal_uninstall_schema('ead');
+}
+
+/**
+ * Implementation of hook_schema
+ */
+function ead_schema() {
+  $schema['ead'] = array(
+    'description' => t("Store EAD XML for nodes  of type 'Finding Aid'."),
+    'fields' => array(
+      'nid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => t("The finding aid's {node}.nid."),
+        ),
+      'vid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+        'description' => t("The finding aid's {node_revisions}.vid.")
+        ),
+      'finding_aid' => array(
+        'type' => 'text',
+        'not null' => TRUE,
+        'description' => t("XML EAD encoded finding aid."),
+      ),
+      

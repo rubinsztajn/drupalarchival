@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Transformed with viv2002_4.xsl -->
+
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "http://lcweb2.loc.gov/xmlcommon/dtds/ead2002/ead.dtd" 
+	[
+	<!ENTITY lcseal SYSTEM "http://lcweb2.loc.gov/xmlcommon/lcseal.jpg" NDATA jpeg>
+	]>
+<eadgrp>
+<ead>
+	<eadheader repositoryencoding="iso15511" relatedencoding="MARC21" countryencoding="iso3166-1" scriptencoding="iso15924" dateencoding="iso8601" langencoding="iso639-2b">
+		<eadid mainagencycode="dlc" countrycode="us" identifier="hdl:loc.afc/eadafc.af006005" encodinganalog="856$u">http://hdl.loc.gov/loc.afc/eadafc.af006005</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="245$a">
+					Fletcher Collins Jr. Collection
+				</titleproper>
+				<subtitle encodinganalog="245$b">
+					<num encodinganalog="090$a">AFC 1939/003</num>
+				</subtitle>
+				<author encodinganalog="245$c">
+					Prepared by Todd Harvey
+				</author>
+			</titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="260$b">
+					<extptr href="lcseal" linktype="simple" show="embed" actuate="onload"/>American Folklife Center, Library of Congress
+				</publisher>
+				<address>
+					<addressline>Washington, D.C.</addressline>
+				</address>
+				<date encodinganalog="260$c" normal="2004-04">April 2004</date>				
+			</publicationstmt>
+			<seriesstmt>
+				<titleproper>Guides to the Collections in the Archive of Folk Culture</titleproper>
+			</seriesstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Encoded by Judy Ng, <date normal="2005-12">December 2005</date></creation>
+			<langusage encodinganalog="546">Finding aid written in <language encodinganalog="041" langcode="eng">English</language></langusage>
+		</profiledesc>
+	</eadheader>
+
+
+	<archdesc type="register" level="collection" relatedencoding="MARC21">
+		<did>
+        		<head>Collection Summary</head>
+			<unitid label="Collection Number" encodinganalog="090" countrycode="us" repositorycode="dlc">AFC 1939/003</unitid>
+	    		<unittitle label="Title" encodinganalog="245$a">Fletcher Collins Jr. Collection
+							<unitdate label="Inclusive Dates" type="inclusive" encodinganalog="245$f" normal="1935/1944">1935-1944</unitdate>
+			</unittitle>
+            	<repository label="Repository" encodinganalog="852">
+                		<corpname><subarea>Archive of Folk Culture, American Folklife Center</subarea> Library of Congress</corpname>
+		                <address>
+		                    <addressline>Washington, D.C.</addressline>
+                		</address>
+            	</repository>
+            	<physdesc label="Extent (original)">
+                		<extent encodinganalog="300">10 linear inches</extent>
+				<extent encodinganalog="300">2 boxes of manuscript materials; 33 recorded discs</extent>
+          		</physdesc>
+			<origination label="Creator">
+				<persname encodinganalog="100">Collins, Fletcher, 1906-2005</persname>
+			</origination>    
+    	    		<langmaterial label="Language" encodinganalog="546">
+				<language encodinganalog="041" langcode="eng">English</language>
+			</langmaterial>
+            		<abstract label="Abstract" encodinganalog="520$a">Documents the Anglo-American folksong collecting activities of Fletcher Collins Jr. from the mid-1930s to the early 1940s in North Carolina, Virginia, and West Virginia.</abstract>
+		</did>
+
+
+		<scopecontent encodinganalog="520">
+			<head>Scope and Content</head>
+				<p>The manuscript materials in this collection reflect Collins's Anglo-American folk music collecting activities from 1935 to 1944. Collins undertook numerous projects, including a song book titled <title render="italic">A Southern Songster</title> and a radio series on WBIG, Greensboro, NC. Administrative papers and correspondence for these and other projects are included among the manuscript materials.</p>
+				<p>The song and tune transcriptions reflect, for the most part, Collins's collecting in North Carolina, Virginia, and West Virginia from 1935 to 1941. Many are the result of Collins's fieldwork, while others were mailed to him or transcribed from printed sources. Contextual information (performer, date, place) is provided for about two-thirds of the songs. Some of the disc recordings were transcribed and are included among the manuscripts.</p>
+				<p>Collins made twenty-one disc recordings in March 1939 (AFS 2235, AFS 3769-3788) under the auspices of the WPA Joint Committee on Folk Arts and deposited them that year at the Library of Congress. In fall 1941, as part of the Library's equipment loan program, Collins borrowed a Presto disc recorder and blank discs. During November and December 1941 he made fifteen disc recordings in Brown Summit (AFS 6491), Burlington (AFS 6365-6366, perhaps 6494), Elon College (AFS 6492-6493), and Greensboro (AFS 6482-6486), North Carolina, and in Fancy Gap, Virginia (AFS 6487-6490). The two discs made in Burlington, Dec. 8, 1941, were in response to Alan Lomax's call for "man-on-the-street" reactions to the Pearl Harbor attacks the day prior. Collins quickly shipped those to Washington, D.C.; today they are included in a separate collection (AFC 1941/004: The Man-on-the-Street Interviews Collection). The remainder of Collins's 1941 recordings were shipped to the Library in early 1942. In 1942 Collins was asked to participate in Lomax's follow-up program, "Dear Mr. President," for which he recorded three discs (AFS 6417-6419). These were sent to the Library in 1942 and are today housed as a separate collection (AFC 1942/003: "Dear Mr. President" Interviews Collection). Collins describes his collecting experiences in the Fletcher Collins Jr. Oral History Collection (AFC 2002/004).</p>
+		</scopecontent>
+
+        	<bioghist encodinganalog="545">
+            		<head>Biographical History</head>
+            		<p>Fletcher Collins Jr. was born on November 19, 1906, in Pittsburgh, Pennsylvania. He graduated from Yale University (Ph.B. 1928, Ph.D. 1934) and was a professor of English at Elon College in North Carolina (1936-42). Collins founded the drama department at Mary Baldwin College in Staunton, Virginia, where he was professor emeritus (1946-77). He is the author of <title render="italic">Alamance Play-Party Songs and Singing Games</title> (1940, reprint 1973), <title render="italic">Medieval Church Music-Dramas</title> (1976), <title render="italic">Troubadour and Trouvère Songs in Singable English</title> (2 vols. 2000-2001), and numerous other books and articles.</p>
+        	</bioghist>
+
+		<controlaccess>
+			<head>Subjects</head>
+					<subject source="lcsh" encodinganalog="650">Ballads</subject>
+					<subject source="lcsh" encodinganalog="650">Fiddle tunes</subject>
+					<subject source="lcsh" encodinganalog="650">Fiddling</subject>
+					<subject source="lcsh" encodinganalog="650">Folk songs</subject>
+				<controlaccess>
+					<head>Locations</head>
+						<geogname source="lcsh" encodinganalog="651">Alamance County (N.C.)</geogname>
+						<geogname source="lcsh" encodinganalog="651">Arthurdale (W. Va.)</geogname>
+						<geogname source="lcsh" encodinganalog="651">Brown Summit (N.C.)</geogname>
+						<geogname source="lcsh" encodinganalog="651">Burlington (N.C.)</geogname>
+						<geogname source="lcsh" encodinganalog="651">Elon College (N.C.)</geogname>
+						<geogname encodinganalog="651">Fancy Gap (Va.)</geogname>
+						<geogname source="lcsh" encodinganalog="651">Greensboro (N.C.)</geogname>
+				</controlaccess>	
+				<controlaccess>
+					<head>Names</head>
+						<note><p>Note: performers from the sound recordings only.</p></note>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Cole, Calvin</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Greer, I. G. (Isaac Garfield), 1881-1967</persname>
+						<persname encodinganalog="600" role="subject">Greer, Mrs. I. G. </persname>
+						<persname encodinganalog="600" role="subject">Hawkins, Louis</persname>
+						<persname encodinganalog="600" role="subject">Meredith, Russell</persname>
+						<persname encodinganalog="600" role="subject">Newman, Mrs. J. U. </persname>
+						<persname encodinganalog="600" role="subject">Quesinberry, Jackson</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Tate, Dan, b. 1896</persname>
+						<persname encodinganalog="600" role="subject">Wagoner, John</persname>
+						<persname encodinganalog="600" role="subject">Wagoner, Pete</persname>
+						<persname encodinganalog="600" role="subject">Wagoner, Vasteen</persname>
+						<persname encodinganalog="600" role="subject">Weddle, Mrs. Susan</persname>
+            		</controlaccess>
+				<controlaccess>
+					<head>Instruments</head>
+						<subject source="lcsh" encodinganalog="650">Fiddle</subject>
+						<subject source="lcsh" encodinganalog="650">Banjo</subject>
+				</controlaccess>		
+		</controlaccess>
+
+		<descgrp type="admininfo">
+		<head>Administrative Information</head>
+
+		<arrangement encodinganalog="351">
+			<head>Arrangement</head>
+			<p>Manuscript materials in the <emph render="italic">Correspondence</emph> and <emph render="italic">Collecting and Recording Projects</emph> sub-series are arranged chronologically.  Song indexes and transcriptions are arranged: 1) by collections ordered by the donor and 2) alphabetically by song title.  Sound recordings are arranged by AFS number.</p>
+		</arrangement>
+
+		<accessrestrict encodinganalog="506">
+            		<head>Access</head>
+            		<p>Listening and viewing access to the collection is unrestricted. Listening copies of the recordings are available in the Folklife Reading Room.  While the American Folklife Center is the custodial division for this collection, some materials may be stored with other divisions, e.g., Motion Picture, Broadcasting and Recorded Sound Division. Restrictions may apply concerning the use, duplication, or publication of these and other items in this collection. Consult a reference librarian in the Folklife Reading Room for specific questions or to request a database of sound recordings created with Access 2000 software (afc_1939003.mdb).</p>
+        	</accessrestrict>
+
+		<acqinfo encodinganalog="541">
+			<head>Acquisition</head>
+			<p>The collection was acquired in three separate gifts: 21 discs in 1939, 12 discs in 1942, and all manuscript materials in July 2002.  Preservation copies of the discs were made as part of Library Work Order (LWO) 4872 in the 1960s. The manuscript materials were processed by Todd Harvey in 2003.</p>
+		</acqinfo>
+
+		<prefercite encodinganalog="524">
+            		<head>Preferred Citation</head>
+            		<p>Fletcher Collins Jr. Collection, Archive of Folk Culture, American Folklife Center, Library of Congress, Washington, D.C.</p>
+         	</prefercite>
+
+         	<relatedmaterial>
+			<head>Related Materials</head>
+            		<p><unittitle>"Man-on-the-Street" Interviews Collection</unittitle> (AFC 1941/004) and <unittitle>"Dear Mr. President" Collection</unittitle> (AFC 1942/003) are available online as <emph render="italic">After the Day of Infamy: "Man-on-the-Street" Interviews Following the Attack on Pearl Harbor</emph>, <extref href="http://memory.loc.gov/ammem/afcphhtml/afcphhome.html" show="new" actuate="onrequest">http://memory.loc.gov/ammem/afcphhtml/afcphhome.html</extref>.</p>
+				<p>See also: <unittitle>Radio Research Project Manuscript Collection</unittitle> (AFC 1941/005); <unittitle>September 11, 2001, Documentary Project</unittitle> (AFC 2001/015); <unittitle>Fletcher Collins Jr. Oral History Collection</unittitle> (AFC 2002/004).</p>
+         	</relatedmaterial>
+
+		</descgrp>
+         
+		<odd type="add">
+         		<head>Collection Concordance by Format</head>
+         		<table>
+            			<tgroup cols="3" align="left">
+               				<colspec colnum="1" colname="1" colwidth="30.00pt"/>
+               				<colspec colnum="2" colname="2" colwidth="52.50pt"/>
+               				<colspec colnum="3" colname="3" colwidth="15.25pt"/>
+               				<colspec colnum="4" colname="4" colwidth="15.25pt"/>
+					<thead valign="bottom">
+                  				<row>
+                     					<entry morerows="0">Quantity</entry>
+                     					<entry morerows="0">Physical Extent (original)</entry>
+                     					<entry morerows="0">Location</entry>
+                     					<entry morerows="0">Item Numbers</entry>
+                  				</row>
+               				</thead>
+					<tbody valign="top">
+                  				<row>
+                     					<entry morerows="0">
+                        					<emph render="bold">Manuscript Materials</emph>
+                     					</entry>
+                     					<entry morerows="0"></entry>
+                     					<entry morerows="0"></entry>
+                     					<entry morerows="0"></entry>
+                  				</row>
+						<row>
+                     					<entry morerows="0">22</entry>
+                     					<entry morerows="0">folders</entry>
+                     					<entry morerows="0">AFC</entry>
+                     					<entry morerows="0">Box 1-2</entry>
+                  				</row>
+                  				<row>
+                     					<entry morerows="0">
+                        					<emph render="bold">Sound Recordings</emph>
+                     					</entry>
+                     					<entry morerows="0"></entry>
+								<entry morerows="0"></entry>
+								<entry morerows="0"></entry>
+                  				</row>
+                  				<row>
+                     					<entry morerows="0">33</entry>
+                     					<entry morerows="0">21 12-inch aluminum based discs; 12 12-inch glass based discs</entry>
+                     					<entry morerows="0">M/B/RS</entry>
+                     					<entry morerows="0">AFS 2235, AFS 3769-3788; AFS 6482-6493</entry>
+                  				</row>
+               				</tbody>
+            			</tgroup>
+         		</table>
+		</odd>
+
+
+		<dsc type="combined">
+			<head>Container List</head>
+				<c01 level="series">
+					<did>
+					<unittitle>Series I: Manuscripts</unittitle>
+					</did>
+				<c02 level="item">
+					<did>
+					<container type="box">1</container>
+					</did>
+				<c03 level="subseries">
+					<did>
+					<unittitle>Administrative Files</unittitle>
+					</did>
+				<c04 level="file">
+					<did>
+					<container type="folder">1</container>
+					<unittitle>Collection Guide</unittitle>
+					</did>
+				</c04></c03>
+				<c03 level="subseries">
+					<did>
+					<unittitle>Correspondence</unittitle>
+					</did>
+				<c04 level="file">
+					<did>
+					<container type="folder">2</container>
+					<unittitle>Correspondence-General, 1936-44</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">3</container>
+					<unittitle>Correspondence-Library of Congress Recording Project, 1941-43</unittitle>
+					</did>
+				</c04></c03>
+				<c03 level="subseries">
+					<did>
+					<unittitle>Collecting and Recording Projects</unittitle>
+					</did>
+				<c04 level="file">
+					<did>
+					<container type="folder">4</container>
+					<unittitle>Indexes-Library of Congress Recording Project, 1939-42</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">5</container>
+					<unittitle>"The Wreck of Old '97" Project, 1939</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">6</container>
+					<unittitle>WBIG Radio Programs, 1940</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">7</container>
+					<unittitle>"A Southern Songster" Project, 1940-44</unittitle>
+					</did>
+				</c04></c03>
+				<c03 level="subseries">
+					<did>
+					<unittitle>Song Indexes and Transcriptions</unittitle>
+					</did>
+				<c04 level="file">
+					<did>
+					<container type="folder">8</container>
+					<unittitle>Songs-Original Folders, Photocopies</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">9</container>
+					<unittitle>Songs-Collections</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">10</container>
+					<unittitle>Songs-Collections, Spiral Notebooks</unittitle>
+					</did>
+				</c04>
+				<c04 level="file">
+					<did>
+					<container type="folder">11</container>
+					<unittitle>Songs-Collections, Arthurdale Fiddle Tunes</unittitle>
+					</did>
+				</c04>
+				</c03>
+				</c02>
+				<c02 level="item">
+					<did>
+					<container type="box">2</container>
+					</did>
+				<c03 level="file">
+					<did>
+					<container type="folder">12</container>
+					<unittitle>Songs: A-B</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">13</container>
+					<unittitle>Songs: C-D</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">14</container>
+					<unittitle>Songs: E-F</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">15</container>
+					<unittitle>Songs: G-H</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">16</container>
+					<unittitle>Songs: I-J</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">17</container>
+					<unittitle>Songs: K-L</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">18</container>
+					<unittitle>Songs: M-N</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">19</container>
+					<unittitle>Songs: O-P</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">20</container>
+					<unittitle>Songs: Q-R</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">21</container>
+					<unittitle>Songs: S-T</unittitle>
+					</did>
+				</c03>
+				<c03 level="file">
+					<did>
+					<container type="folder">22</container>
+					<unittitle>Songs: U-Z</unittitle>
+					</did>
+				</c03></c02></c01>
+
+				<c01 level="series">
+					<did>
+					<unittitle>Series II: Sound Recordings</unittitle>
+					</did>
+				<c02 level="item">
+					<did>
+					<unittitle>AFS 2235, AFS 3769-3788</unittitle>
+					</did>
+					<scopecontent>
+					<p>original discs (preservation tapes: LWO 4872, reels 142B, 245B-246)</p>
+					</scopecontent>
+				</c02>
+				<c02 level="item">
+					<did>
+					<unittitle>AFS 6482-6493</unittitle>
+					</did>
+					<scopecontent>
+					<p>original discs (preservation tapes: LWO 4872, reels 413B-414A)</p>
+					</scopecontent>
+				</c02></c01>
+    		</dsc>
+
+		<index>
+			<head>Appendix: Song Titles</head>
+			<note><p>These titles are taken from both the manuscript materials and the sound recordings.</p></note>
+				<indexentry><name>"Adam and Eve"</name></indexentry>
+				<indexentry><name>"All My Sins Are Taken Away"</name></indexentry>
+				<indexentry><name>"Arkansas Traveler"</name></indexentry>
+				<indexentry><name>"As I Went Out One Morning in May"</name></indexentry>
+				<indexentry><name>"As the Ship Went Down"</name></indexentry>
+				<indexentry><name>"Aunt Jemima"</name></indexentry>
+				<indexentry><name>"Babes in the Wood"</name></indexentry>
+				<indexentry><name>"Baggage Coach Ahead, The"</name></indexentry>
+				<indexentry><name>"Barbara Allen"</name></indexentry>
+				<indexentry><name>"Berayna"</name></indexentry>
+				<indexentry><name>"Best Old Man in the World"</name></indexentry>
+				<indexentry><name>"Bible Is the Engineer, The"</name></indexentry>
+				<indexentry><name>"Big Black Billy Goat"</name></indexentry>
+				<indexentry><name>"Bill Bailey"</name></indexentry>
+				<indexentry><name>"Billy Boy"</name></indexentry>
+				<indexentry><name>"Billy Grimes"</name></indexentry>
+				<indexentry><name>"Birmingham Jail"</name></indexentry>
+				<indexentry><name>"Blind Child's Prayer, The"</name></indexentry>
+				<indexentry><name>"Blind Girl, The"</name></indexentry>
+				<indexentry><name>"Blue Juniata, The"</name></indexentry>
+				<indexentry><name>"Boll Weevil, The"</name></indexentry>
+				<indexentry><name>"Bonny Barbary Allen"</name></indexentry>
+				<indexentry><name>"Boston Burglar, The"</name></indexentry>
+				<indexentry><name>"Boy's Best Friend Is His Mother, A"</name></indexentry>
+				<indexentry><name>"Brambly Briars"</name></indexentry>
+				<indexentry><name>"Brown Eyes"</name></indexentry>
+				<indexentry><name>"Buckeye Jim"</name></indexentry>
+				<indexentry><name>"Bully of the Town, The"</name></indexentry>
+				<indexentry><name>"Butcher Boy"</name></indexentry>
+				<indexentry><name>"Captain, Captain, Tell Me True"</name></indexentry>
+				<indexentry><name>"Casey Jones"</name></indexentry>
+				<indexentry><name>"Charleston Merchant, The"</name></indexentry>
+				<indexentry><name>"Charlie Lawson"</name></indexentry>
+				<indexentry><name>"Charlie over the Water"</name></indexentry>
+				<indexentry><name>"Chick-a-ma-craney-ma-crow"</name></indexentry>
+				<indexentry><name>"Cindy"</name></indexentry>
+				<indexentry><name>"Claude Allen"</name></indexentry>
+				<indexentry><name>"Cock Robin"</name></indexentry>
+				<indexentry><name>"Coffee Grows in a White Oak Tree"</name></indexentry>
+				<indexentry><name>"Come All You Fair and Tender Ladies"</name></indexentry>
+				<indexentry><name>"Come All You Good People"</name></indexentry>
+				<indexentry><name>"Common Bill"</name></indexentry>
+				<indexentry><name>"Cruel Mother, The/Down by the Greenwood Side/Hangman"</name></indexentry>
+				<indexentry><name>"Death of Jesse James, The"</name></indexentry>
+				<indexentry><name>"Derby Ram, The"</name></indexentry>
+				<indexentry><name>"Derby Town"</name></indexentry>
+				<indexentry><name>"Devil and the Farmer, The"</name></indexentry>
+				<indexentry><name>"Dog and Gun"</name></indexentry>
+				<indexentry><name>"Down by the Seashore"</name></indexentry>
+				<indexentry><name>"Down in Arkansaw"</name></indexentry>
+				<indexentry><name>"Drowsy Sleeper"</name></indexentry>
+				<indexentry><name>"Dusty Miller"</name></indexentry>
+				<indexentry><name>"Dying Cowboy, The"</name></indexentry>
+				<indexentry><name>"Dying Cowboy's Lament"</name></indexentry>
+				<indexentry><name>"Edward/The Little Guinea Pig"</name></indexentry>
+				<indexentry><name>"Eliza Jane"</name></indexentry>
+				<indexentry><name>"Ellen Smith"</name></indexentry>
+				<indexentry><name>"Fair Charlotte/Young Charlotte"</name></indexentry>
+				<indexentry><name>"Fair Young Maid, A"</name></indexentry>
+				<indexentry><name>"Fare You Well, My Own True Love"</name></indexentry>
+				<indexentry><name>"Farmers, The"</name></indexentry>
+				<indexentry><name>"Fellow That-A Looks Like Me, The"</name></indexentry>
+				<indexentry><name>"Fickle Lover, The"</name></indexentry>
+				<indexentry><name>"Flop Eared Mule"</name></indexentry>
+				<indexentry><name>"Foggy Foggy Dew"</name></indexentry>
+				<indexentry><name>"Fond Affections"</name></indexentry>
+				<indexentry><name>"Fox, The"</name></indexentry>
+				<indexentry><name>"Frankie and Johnny"</name></indexentry>
+				<indexentry><name>"Frog in the Park"</name></indexentry>
+				<indexentry><name>"Frog in the Pool"</name></indexentry>
+				<indexentry><name>"Frog Went A-Courting"</name></indexentry>
+				<indexentry><name>"George Came Riding through the Town"</name></indexentry>
+				<indexentry><name>"George Collins"</name></indexentry>
+				<indexentry><name>"George Riley"</name></indexentry>
+				<indexentry><name>"Giddyyap Napoleon"</name></indexentry>
+				<indexentry><name>"Git on Board, Little Children"</name></indexentry>
+				<indexentry><name>"Give Me Three Grains of Corn"</name></indexentry>
+				<indexentry><name>"Go In and Out of the Window"</name></indexentry>
+				<indexentry><name>"Go Tell Aunt Patsy"</name></indexentry>
+				<indexentry><name>"Go Tell That Weary Travelling Man"</name></indexentry>
+				<indexentry><name>"Going Down the Road Feeling Bad"</name></indexentry>
+				<indexentry><name>"Good Old Man, The (Four Nights Drunk)" </name></indexentry>
+				<indexentry><name>"Grasshopper Sittin' on a Sweet Potater Vine"</name></indexentry>
+				<indexentry><name>"Green Beds"</name></indexentry>
+				<indexentry><name>"Green Grow the Rushes-Ho/The Ditty Song"</name></indexentry>
+				<indexentry><name>"Green Grows the Laurel"</name></indexentry>
+				<indexentry><name>"Green Grows the Willow Tree"</name></indexentry>
+				<indexentry><name>"Green Mountain Polka"</name></indexentry>
+				<indexentry><name>"Ground Hog"</name></indexentry>
+				<indexentry><name>"Guerilla Man, The"</name></indexentry>
+				<indexentry><name>"Gypsy Laddie, The/The Blackjack Davy"</name></indexentry>
+				<indexentry><name>"Gypsy's Warning, The"</name></indexentry>
+				<indexentry><name>"Hangman, The"</name></indexentry>
+				<indexentry><name>"Hi! Lowlanders"</name></indexentry>
+				<indexentry><name>"House Carpenter, The"</name></indexentry>
+				<indexentry><name>"How Old Are You My Pretty Little Pink?" </name></indexentry>
+				<indexentry><name>"I Asked My Love to Take a Walk/Pretty Susan"</name></indexentry>
+				<indexentry><name>"I Caught a Beau"</name></indexentry>
+				<indexentry><name>"I Don't Love Nobody"</name></indexentry>
+				<indexentry><name>"I Lost My Glove"</name></indexentry>
+				<indexentry><name>"I Married Me a Wife"</name></indexentry>
+				<indexentry><name>"I Stepped Out One Morning in May"</name></indexentry>
+				<indexentry><name>"I'll Build Me a Castle"</name></indexentry>
+				<indexentry><name>"I'll Need Not Your Kind Caresses"</name></indexentry>
+				<indexentry><name>"I'm Happy"</name></indexentry>
+				<indexentry><name>"If I Had a Butcher Knife"</name></indexentry>
+				<indexentry><name>"Independence Song"</name></indexentry>
+				<indexentry><name>"Independent Lover"</name></indexentry>
+				<indexentry><name>"Indian Song"</name></indexentry>
+				<indexentry><name>"Irish Molly-O"</name></indexentry>
+				<indexentry><name>"Is This the Promise You Made to Me?" </name></indexentry>
+				<indexentry><name>"Jack Has Gone A-Sailing"</name></indexentry>
+				<indexentry><name>"Jealous Lover of Lone Green Valley, The/Fair Young Ellen"</name></indexentry>
+				<indexentry><name>"Jeff Davis"</name></indexentry>
+				<indexentry><name>"Jew's Daughter, The"</name></indexentry>
+				<indexentry><name>"Jockey Hat, The"</name></indexentry>
+				<indexentry><name>"Joe Bowers"</name></indexentry>
+				<indexentry><name>"John Henry"</name></indexentry>
+				<indexentry><name>"Johnny Doyle"</name></indexentry>
+				<indexentry><name>"Johnny Home from Sea"</name></indexentry>
+				<indexentry><name>"Johnny Randolph"</name></indexentry>
+				<indexentry><name>"Journeyman Tailor"</name></indexentry>
+				<indexentry><name>"Kenny Wagoner"</name></indexentry>
+				<indexentry><name>"King William Was King George's Son"</name></indexentry>
+				<indexentry><name>"Kitty Cline"</name></indexentry>
+				<indexentry><name>"Kitty Runs"</name></indexentry>
+				<indexentry><name>"Kitty Went Fiddle-Die-Dee"</name></indexentry>
+				<indexentry><name>"Lady Isabel and the Elf Knight"</name></indexentry>
+				<indexentry><name>"Let My Name Be Kindly Spoken"</name></indexentry>
+				<indexentry><name>"Letter Edged in Black, The"</name></indexentry>
+				<indexentry><name>"Lexington Murder/Nellie Cropsey"</name></indexentry>
+				<indexentry><name>"Little Brown Jug"</name></indexentry>
+				<indexentry><name>"Little David, Play on Your Harp"</name></indexentry>
+				<indexentry><name>"Little Mary Fagan"</name></indexentry>
+				<indexentry><name>"Little Mohee, The"</name></indexentry>
+				<indexentry><name>"Little Rosewood Casket, The"</name></indexentry>
+				<indexentry><name>"Little Sparrow/The Cuckoo/I'll Build Up a Castle"</name></indexentry>
+				<indexentry><name>"London Bridge Is Breaking Down"</name></indexentry>
+				<indexentry><name>"Long Time Ago"</name></indexentry>
+				<indexentry><name>"Lord Bateman"</name></indexentry>
+				<indexentry><name>"Lord Lovel"</name></indexentry>
+				<indexentry><name>"Lord Randal"</name></indexentry>
+				<indexentry><name>"Lord Thomas and Fair Ella"</name></indexentry>
+				<indexentry><name>"Love Henry"</name></indexentry>
+				<indexentry><name>"Lover's Leap"</name></indexentry>
+				<indexentry><name>"Maggie"</name></indexentry>
+				<indexentry><name>"Mary and Sandy (Sandy Far at Sea)" </name></indexentry>
+				<indexentry><name>"Mary Golden Tree, The"</name></indexentry>
+				<indexentry><name>"Mary, Martha, and Lazarus"</name></indexentry>
+				<indexentry><name>"Maumee Maid, The"</name></indexentry>
+				<indexentry><name>"Mermaid, The"</name></indexentry>
+				<indexentry><name>"Michael Roy"</name></indexentry>
+				<indexentry><name>"Miller and His Son, The"</name></indexentry>
+				<indexentry><name>"Miller's Will, The"</name></indexentry>
+				<indexentry><name>"Mister Frog Went A-Courting"</name></indexentry>
+				<indexentry><name>Mnemonic school songs: (a) ABC's, (b) Spelling, (c) Multiplication table, (d) Geography</name></indexentry>
+				<indexentry><name>"Molly Bond"</name></indexentry>
+				<indexentry><name>"Molly Bright"</name></indexentry>
+				<indexentry><name>"Moonshiner's Dream"</name></indexentry>
+				<indexentry><name>"Moravian Song"</name></indexentry>
+				<indexentry><name>"My Grandmother's Advice"</name></indexentry>
+				<indexentry><name>"My Soldier Scarce Twenty-Four Years Old"</name></indexentry>
+				<indexentry><name>"Naomi Wise"</name></indexentry>
+				<indexentry><name>"New River Train"</name></indexentry>
+				<indexentry><name>"Nightingale, The"</name></indexentry>
+				<indexentry><name>"Nobody's Business"</name></indexentry>
+				<indexentry><name>"Oats, Peas, Beans"</name></indexentry>
+				<indexentry><name>"Oh, To Me the Time Draws Near"</name></indexentry>
+				<indexentry><name>"Oh, What a Happy Land Is England"</name></indexentry>
+				<indexentry><name>"Oh, Where is My Sweetheart?" </name></indexentry>
+				<indexentry><name>"Old Arm Chair, The"</name></indexentry>
+				<indexentry><name>"Old Bangum"</name></indexentry>
+				<indexentry><name>"Old Gray Goose, The"</name></indexentry>
+				<indexentry><name>"Old Joe Clark"</name></indexentry>
+				<indexentry><name>"Old Maid, The"</name></indexentry>
+				<indexentry><name>"Old Rosin the Beau"</name></indexentry>
+				<indexentry><name>"Old Sally Brown"</name></indexentry>
+				<indexentry><name>"Old Smokey"</name></indexentry>
+				<indexentry><name>"Old Woman and the Preacher, The"</name></indexentry>
+				<indexentry><name>"On the Tennessee"</name></indexentry>
+				<indexentry><name>"On to Richmond"</name></indexentry>
+				<indexentry><name>"On Top of Old Smokies/The Wagoner's Lad"</name></indexentry>
+				<indexentry><name>"Orphan Girl"</name></indexentry>
+				<indexentry><name>"Our Camp's in the Wilderness"</name></indexentry>
+				<indexentry><name>"Oyster Girl, The"</name></indexentry>
+				<indexentry><name>"Paddy the Barber"</name></indexentry>
+				<indexentry><name>"Paper of Pins, A"</name></indexentry>
+				<indexentry><name>"Pig in the Parlor"</name></indexentry>
+				<indexentry><name>"Pretty Sarah"</name></indexentry>
+				<indexentry><name>"Quaker Lover, The"</name></indexentry>
+				<indexentry><name>"Raggedy Ann"</name></indexentry>
+				<indexentry><name>"Red River Valley"</name></indexentry>
+				<indexentry><name>"Reply to the Gypsy's Warning, The"</name></indexentry>
+				<indexentry><name>"Rich Man and Lazarus, The"</name></indexentry>
+				<indexentry><name>"Rich Merchant, The (The Brown Girl)" </name></indexentry>
+				<indexentry><name>"Rock Island Line, The"</name></indexentry>
+				<indexentry><name>"Romish Lady, The"</name></indexentry>
+				<indexentry><name>"Run, Nigger, Run"</name></indexentry>
+				<indexentry><name>"Sailor Boy"</name></indexentry>
+				<indexentry><name>"Saint James Infirmary"</name></indexentry>
+				<indexentry><name>"Seaman on the Doe, The"</name></indexentry>
+				<indexentry><name>"Seven Long Years I Served My King"</name></indexentry>
+				<indexentry><name>"Shabby Genteel, The"</name></indexentry>
+				<indexentry><name>"Sheepskin and Beeswax"</name></indexentry>
+				<indexentry><name>"Shoot the Buffalo"</name></indexentry>
+				<indexentry><name>"Silver Dagger"</name></indexentry>
+				<indexentry><name>"Silvery Tide, The"</name></indexentry>
+				<indexentry><name>"Single Gal (When I Was Single)" </name></indexentry>
+				<indexentry><name>"Skip to My Lou"</name></indexentry>
+				<indexentry><name>"Soldier and the Lady, The"</name></indexentry>
+				<indexentry><name>"Soldier, Soldier"</name></indexentry>
+				<indexentry><name>"Soldier, Won't You Marry Me?" </name></indexentry>
+				<indexentry><name>"Soldier's Advice, The"</name></indexentry>
+				<indexentry><name>"Soldier's Poor Little Boy, A"</name></indexentry>
+				<indexentry><name>"Soldier's Sweetheart, The"</name></indexentry>
+				<indexentry><name>"Sourwood Mountain"</name></indexentry>
+				<indexentry><name>"Sparkling Sunday Night"</name></indexentry>
+				<indexentry><name>"Springfield Mountain"</name></indexentry>
+				<indexentry><name>"Steamboat Bill"</name></indexentry>
+				<indexentry><name>"Stepmother, The"</name></indexentry>
+				<indexentry><name>"Storm Is on the Ocean, The"</name></indexentry>
+				<indexentry><name>"Sugar Hill"</name></indexentry>
+				<indexentry><name>"Sweet Are the Flowers in Springtime"</name></indexentry>
+				<indexentry><name>"Sweet William and Fair Ellen"</name></indexentry>
+				<indexentry><name>"Sydna Allen"</name></indexentry>
+				<indexentry><name>"Take This Hammer"</name></indexentry>
+				<indexentry><name>"There's Some Sees Lots of Pleasures"</name></indexentry>
+				<indexentry><name>"Three Babes, The"</name></indexentry>
+				<indexentry><name>"Three Little Girls Went Skating"</name></indexentry>
+				<indexentry><name>"Time Draws Near, The"</name></indexentry>
+				<indexentry><name>"Tom Boleyn"</name></indexentry>
+				<indexentry><name>"Tree in the Wood, The"</name></indexentry>
+				<indexentry><name>"Turkey in the Mountain (I Don't Have Old Cindy)" </name></indexentry>
+				<indexentry><name>"Turkey in the Straw"</name></indexentry>
+				<indexentry><name>"Twenty Long Years We've Been Married"</name></indexentry>
+				<indexentry><name>"Two Brothers, The"</name></indexentry>
+				<indexentry><name>"Two Sisters"</name></indexentry>
+				<indexentry><name>"Ugly Mug"</name></indexentry>
+				<indexentry><name>"Villikin's Dinah"</name></indexentry>
+				<indexentry><name>"Wabash Blues"</name></indexentry>
+				<indexentry><name>"Waily, Waily"</name></indexentry>
+				<indexentry><name>"Wayfaring Stranger"</name></indexentry>
+				<indexentry><name>"We've Come to Judgement"</name></indexentry>
+				<indexentry><name>"Weeping Willow Tree, The"</name></indexentry>
+				<indexentry><name>"Weevily Wheat"</name></indexentry>
+				<indexentry><name>"When the World's on Fire"</name></indexentry>
+				<indexentry><name>"Whistle, Daughter, Whistle"</name></indexentry>
+				<indexentry><name>"Whoa Mule"</name></indexentry>
+				<indexentry><name>"Wife of Usher's Well, The"</name></indexentry>
+				<indexentry><name>"Wild Irishman, The"</name></indexentry>
+				<indexentry><name>"Will the Circle Be Unbroken"</name></indexentry>
+				<indexentry><name>"William Taylor"</name></indexentry>
+				<indexentry><name>"Willie and Polly (Pretty Polly)" </name></indexentry>
+				<indexentry><name>"Willie My Darling Come Back"</name></indexentry>
+				<indexentry><name>"Willie Ransome"</name></indexentry>
+				<indexentry><name>"Woman Who Made Her Old Man Blind, The"</name></indexentry>
+				<indexentry><name>"Wreck of Ninety-Seven"</name></indexentry>
+				<indexentry><name>"Wreck of Number Nine, The"</name></indexentry>
+				<indexentry><name>"Ye Guardian Powers"</name></indexentry>
+				<indexentry><name>"Young Collins"</name></indexentry>
+				<indexentry><name>"Young Man Who Wouldn't Hoe His Corn, The"</name></indexentry>
+		</index>
+
+	</archdesc>
+</ead>
+<ead>
+	<eadheader repositoryencoding="iso15511" relatedencoding="MARC21" countryencoding="iso3166-1" scriptencoding="iso15924" dateencoding="iso8601" langencoding="iso639-2b">
+		<eadid mainagencycode="dlc" countrycode="us" identifier="hdl:loc.afc/eadafc.af005003" encodinganalog="856$u">http://hdl.loc.gov/loc.afc/eadafc.af005003</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="245$a">
+					Art Rosenbaum Georgia Folklore Collection 
+				</titleproper>
+				<subtitle encodinganalog="245$b">
+					<num encodinganalog="090$a">AFC 2000/003</num>
+				</subtitle>
+				<author encodinganalog="245$c">
+					Prepared by Katie Lyn Peebles 
+				</author>
+			</titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="260$b">
+					<extptr href="lcseal" linktype="simple" show="embed" actuate="onload"/>American Folklife Center, Library of Congress
+				</publisher>
+				<address>
+					<addressline>Washington, D.C.</addressline>
+				</address>
+				<date encodinganalog="260$c" normal="2000-08">August 2000</date>				
+			</publicationstmt>
+			<seriesstmt>
+				<titleproper>Guides to the Collections in the Archive of Folk Culture</titleproper>
+			</seriesstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Encoded by Judy Ng, <date normal="2005-12">December 2005</date></creation>
+			<langusage encodinganalog="546">Finding aid written in <language encodinganalog="041" langcode="eng">English</language></langusage>
+		</profiledesc>
+	</eadheader>
+
+
+	<archdesc type="register" level="collection" relatedencoding="MARC21">
+		<did>
+        		<head>Collection Summary</head>
+			<unitid label="Collection Number" encodinganalog="090" countrycode="us" repositorycode="dlc">AFC 2000/003</unitid>
+	    		<unittitle label="Title" encodinganalog="245$a">Art Rosenbaum Georgia Folklore Collection
+				<unitdate label="Inclusive Dates" type="inclusive" encodinganalog="245$f" normal="1955/1983">1955-1983</unitdate>
+            		<unitdate label="Bulk Dates" type="bulk" encodinganalog="245$g">1955, 1966, 1976-1983</unitdate>
+			</unittitle>
+            	<repository label="Repository" encodinganalog="852">
+                		<corpname><subarea>Archive of Folk Culture, American Folklife Center</subarea> Library of Congress</corpname>
+		                <address>
+		                    <addressline>Washington, D.C.</addressline>
+                		</address>
+            	</repository>
+            	<physdesc label="Extent (original)">
+                		<extent encodinganalog="300">15 boxes of 236 audiocassette tapes; 1 box of manuscripts and electronic media</extent>
+          		</physdesc>
+			<origination label="Creator">
+				<persname source="lcnaf" encodinganalog="100">Rosenbaum, Art</persname>
+			</origination>    
+    	    		<langmaterial label="Language" encodinganalog="546">
+				<language encodinganalog="041" langcode="eng">English</language>
+			</langmaterial>
+            		<abstract label="Abstract" encodinganalog="520$a">Consists of reference copies of tape recordings made by Art Rosenbaum in north and coastal Georgia principally in the 1970s and early 1980s. These field recordings encompass many genres of acoustic folk music, including gospel, shout, blues, and ballads, and some interviews with the performers. They come from the contexts of home, church, and festival</abstract>
+		</did>
+
+
+		<scopecontent encodinganalog="520">
+			<head>Scope and Content</head>
+				<p>Art Rosenbaum collected these field recordings in north and coastal Georgia between 1976 and 1983. They include many genres of instrumental and vocal folk music and, in addition, oral history interviews with some performers. These recordings were made in homes, churches, and at festivals with the intent of: 1) preserving through duplication the content of deteriorating tapes of local performing traditions; 2) making these recordings accessible to a wider public; and 3) ensuring the continuity of the musical traditions of these performers' ancestors.</p> 
+				<p>Although Rosenbaum made the majority of these recordings in the late 1970s and early 1980s, one tape (GFC 43) is dated from approximately 1955 and was duplicated from a recording by Oscar and Fred Huff. Another tape (GFC 171) was recorded with Joe Heaney in September 1966. Most of the recordings were made in summer and fall, but notably 4 tapes (GFC 319-322) record an Easter celebration in Oglethorpe County. An extensive sequence of tapes (GFC 295-315) was recorded in the Georgia Sea Islands.</p>
+				<p>The Walter J. Brown Media Archives and Peabody Awards Collection at the University of Georgia Libraries holds the original masters, where they were deposited in 1987 by Art Rosenbaum, and the 3-1/4 inch preservation copies that were made recently. A few tapes were not duplicated onto audiocassettes because of their extremely poor condition even after restoration. The Inventory (Folder 2) appended to this guide provides further details.</p>
+				<p>In addition to complete sets of recordings at the Archive of Folk Culture at the American Folklife Center and the University of Georgia Media Archives (Athens, GA 30602), different selections of reference copies from the collection are also held at locations around Georgia. In regions that are represented in the field recordings, the University of Georgia Libraries deposited relevant copies of field tapes at the regional public libraries. The names and addresses of these libraries are included in Folder 3.</p>
+				<p>The Georgia Folklore Collection consists primarily of the field recordings made by Art Rosenbaum and was created when he donated these tapes to the University of Georgia Libraries Media Archives in 1987. However, the Georgia Folklore Collection is currently an open collection and also contains associated collections of sound and video recordings from around Georgia, including those made by the Georgia Folklore Society.</p>
+		</scopecontent>
+
+        	<bioghist encodinganalog="545">
+            		<head>Biographical History</head>
+            		<p>The field collector, Art Rosenbaum, is a professor of art at the Lamar Dodd School of Art at the University of Georgia. He was born in 1938 and received his degrees from Columbia University (A.B. 1960, MFA 1961). He also studied at the Institut d'Art et d'Archéologie in Paris on a Fulbright grant in 1964-65, and has exhibited his drawings and paintings extensively. He has recorded folk musicians throughout the United States, particularly in Georgia, Kentucky, Indiana, Iowa, and New York. Some of his visual art portrays the performers and musical performances represented in his musical collections.</p>
+				<p>Rosenbaum has recently published <title render="italic">Shout Because You're Free: The African American Ring Shout Tradition in Coastal Georgia </title>(F 292 .M15 R67 1998; Margo Newmark Rosenbaum, photographs; Johann S. Buis, music transcriptions and historical essay). This book draws in part from the field recordings of the Georgia Folklore Collection, and also includes subsequent field research. Four recordings that include music from these field recordings are: <title render="italic">Folk Vision and Voices: Traditional Music and Song in Northern Georgia </title>(1983, Folkways FE 34161-34162), <title render="italic">Down Yonder: Old-Time String Band Music from Georgia </title>(1982, Folkways FS 31089), <title render="italic">McIntosh County Shouters: Slave Shout Songs from the Coast of Georgia </title>(1984, Folkways FE 4344), and <title render="italic">Georgia Folk: A Sampler of Traditional Sounds </title>(1990, Global Village SC 03).</p> 
+				<p>The Archive of Folk Culture also holds several other Art Rosenbaum collections, including AFS 17,541-567 (LWO 8487, 1-27). These include reference copies of 19 tapes and original field recordings from the Archives of Traditional Music, Bloomington, Indiana. The AFS 17,541-550 were recorded between 1958 and 1971 in Iowa, Kentucky, Michigan, New York City, Maine, New Hampshire, and Scotland. AFS 17,551-17,567 were duplicated from the original masters at the Archives of Traditional Music, Indiana University, Bloomington, Indiana, where they are numbered 1697-1741. These master tapes were recorded in central and southern Indiana.</p>
+        	</bioghist>
+
+		<controlaccess>
+			<head>Subjects</head>
+				<controlaccess>
+					<head>Names</head>
+						<corpname encodinganalog="610" source="lcnaf" role="subject">Eller Brothers</corpname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Howard Finster</persname>
+						<corpname encodinganalog="610" source="lcnaf" role="subject">McIntosh County Shouters</corpname>
+						<corpname encodinganalog="610" source="lcnaf" role="subject">Bessie Jones and the Georgia Sea Island Singers</corpname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Neal Pattman</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Joe Rakestraw</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Jake Staggers</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Gordon Tanner</persname>
+            		</controlaccess>
+				<controlaccess>
+					<head>Subjects</head>
+						<subject source="lcsh" encodinganalog="650">Ballads</subject>
+						<subject source="lcsh" encodinganalog="650">Banjo music</subject>
+						<subject source="lcsh" encodinganalog="650">Blues (Music) </subject>
+						<subject source="lcsh" encodinganalog="650">Bluegrass music</subject>
+						<subject source="lcsh" encodinganalog="650">Gospel music</subject>
+						<subject source="lcsh" encodinganalog="650">Old time string band</subject>
+						<subject encodinganalog="650">Play songs</subject>
+						<subject source="lcsh" encodinganalog="650">Sacred vocal music</subject>
+						<subject source="lcsh" encodinganalog="650">Work songs</subject>
+				</controlaccess>	
+				<controlaccess>
+					<head>Instruments</head>
+						<subject source="lcsh" encodinganalog="650">Banjo</subject>
+						<subject source="lcsh" encodinganalog="650">Bass</subject>
+						<subject encodinganalog="650">Drums</subject>
+						<subject encodinganalog="650">Fiddle</subject>
+						<subject source="lcsh" encodinganalog="650">Guitar</subject>
+						<subject source="lcsh" encodinganalog="650">Harmonica</subject>
+						<subject source="lcsh" encodinganalog="650">Mandolin</subject>
+						<subject source="lcsh" encodinganalog="650">Piano</subject>
+						<subject source="lcsh" encodinganalog="650">Voice</subject>
+				</controlaccess>		
+		</controlaccess>
+
+		<descgrp type="admininfo">
+		<head>Administrative Information</head>
+		<arrangement encodinganalog="351">
+			<head>Arrangement</head>
+			<p>Sound recordings in this collection are arranged by the original Georgia Folklore Collection (GFC) number.</p>
+		</arrangement>
+
+		<accessrestrict encodinganalog="506">
+            		<head>Access</head>
+            		<p>Listening and viewing access to the collection is unrestricted. Listening copies of the recordings are available at the Folklife Reading Room.  Restrictions may apply concerning the use, duplication, or publication of items in this collection. Consult a reference librarian in the Folklife Reading Room for specific information about this collection.</p>
+        	</accessrestrict>
+
+		<acqinfo encodinganalog="541">
+			<head>Acquisition</head>
+			<p>Art Rosenbaum donated 325 reels of field recordings to the University of Georgia Libraries in 1987. The Media Archives of the University of Georgia Libraries restored the original reel-to-reel tapes and donated a reference set of audiocassettes to the American Folklife Center in January 2000.  David Taylor coordinated the donation from the University of Georgia Libraries Media Archives. Katie Lyn Peebles accessioned, arranged, and processed this collection.</p>
+		</acqinfo>
+
+		<prefercite encodinganalog="524">
+            		<head>Preferred Citation</head>
+            		<p>Art Rosenbaum Georgia Folklore Collection, Archive of Folk Culture, American Folklife Center, Library of Congress, Washington, D.C.</p>
+         	</prefercite>
+
+         	<relatedmaterial>
+			<head>Related Materials</head>
+            		<p><title>Georgia Folklore Collection</title> located in the Walter J. Brown Media Archives, University of Georgia, Athens, Georgia.  Original recordings.</p>
+         	</relatedmaterial>
+		</descgrp>
+
+
+		<dsc type="combined">
+			<head>Container List</head>
+				<c01 level="series">
+					<did>
+					<unittitle>Series I: Manuscripts</unittitle>
+					</did>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-1</container>
+					<unittitle>Collection guide, inventory and correspondence.</unittitle>
+					</did>
+					<scopecontent>
+						<p>Hard copy and disc copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-2</container>
+					<unittitle>Inventory.</unittitle>
+					</did>
+					<scopecontent>
+						<p>Includes descriptions and the column headings Call Number, Artist, Group/ Event/ Title, Date, Recording Location, and Songs.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-3</container>
+					<unittitle>List of Public Libraries.</unittitle>
+					</did>
+					<scopecontent>
+						<p>Includes the names, addresses, phone numbers, directors, and service area of the public libraries receiving copies of the field recordings. Also includes the number of audiocassettes donated, the original number of reel-to-reel tapes duplicated on the audiocassettes, and the locations at which the original masters were recorded.</p>
+					</scopecontent>
+				</c02></c01>
+
+				<c01 level="series">
+					<did>
+					<unittitle>Series II: Sound Recordings</unittitle>
+					</did>
+				<c02 level="file">
+					<did>
+					<container type="box">2</container>
+					<unittitle>GFC 1-23</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">3</container>
+					<unittitle>GFC 24-53</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">4</container>
+					<unittitle>GFC 54-79</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">5</container>
+					<unittitle>GFC 80-107</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">6</container>
+					<unittitle>GFC 108-128</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">7</container>
+					<unittitle>GFC 129-149</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">8</container>
+					<unittitle>GFC 150-172</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">9</container>
+					<unittitle>GFC 173-192</unittitle>
+					</did>
+					<scopecontent>
+						<p>Note: Tape 193 was not transferred to audiocassette copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">10</container>
+					<unittitle>GFC 194-214</unittitle>
+					</did>
+					<scopecontent>
+						<p>Note: Tape 215 was not transferred to audiocassette copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">11</container>
+					<unittitle>GFC 216-237</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">12</container>
+					<unittitle>GFC 238-263</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">13</container>
+					<unittitle>GFC 264-288</unittitle>
+					</did>
+					<scopecontent>
+						<p>Note: Tape 289 was not transferred to audiocassette copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">14</container>
+					<unittitle>GFC 290-307</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">15</container>
+					<unittitle>GFC 308-325</unittitle>
+					</did>
+				</c02></c01>
+
+				<c01 level="series">
+					<did>
+					<unittitle>Series III: Electronic Media</unittitle>
+					</did>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-1</container>
+					<unittitle>Collection guide, inventory and correspondence.</unittitle>
+					</did>
+					<scopecontent>
+						<p>1 3.5-inch computer diskette. Contains the Collection Guide and Inventory files.</p>
+					</scopecontent>
+				</c02></c01>
+    		</dsc>
+	</archdesc>
+</ead>
+</eadgrp>

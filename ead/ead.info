@@ -1,0 +1,5 @@
+; $Id$
+name = EAD
+description = "Provides tools for creating and displaying EAD finding aids"
+core = 6.x
+package = Archival
