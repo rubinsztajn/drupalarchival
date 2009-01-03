@@ -40,5 +40,13 @@ function ead_schema() {
         'type' => 'text',
         'not null' => TRUE,
         'description' => t("XML EAD encoded finding aid."),
+        ),
       ),
+    'primary key' => array('nid', 'vid'),
+    'unique keys' => array(
+      'vid' => array('nid')
+      ),
+    );
+  return $schema;
+}
       
