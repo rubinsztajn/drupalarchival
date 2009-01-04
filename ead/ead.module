@@ -1,0 +1,160 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Converts XML EAD encoded finding aids into Drupal nodes.
+ */
+
+/**
+ * Implementation of hook_node_info().
+ */
+
+function ead_node_info() {
+  return array(
+    'ead' => array(
+      'name' => t('Finding Aid'),
+      'module' => 'ead',
+      'description' => t('View an EAD encoded finding aid'),
+      'has_title' => TRUE,
+      'title_label' => t('Title'),
+      'has_body' => FALSE,
+      'locked' => TRUE,
+     )
+   );
+ }
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+
+function ead_menu_alter(&$callbacks) {
+  if (!user_access('administer nodes')) {
+    $callbacks['node/add/ead']['access callback'] = FALSE;
+    unset($callbacks['node/add/ead']['access arguments']);
+  }
+}  
+
+/**
+ * Implementation of hook_perm().
+ */
+
+function ead_perm() {
+  return array('create ead', 'edit own ead', 'edit any ead, delete own ead', 'delete any ead');
+} 
+
+/**
+ * Implementation of hook_access().
+ */
+
+function ead_access($op, $node, $account) {
+  $is_author = $account->uid == $node->uid;
+  switch ($op) {
+    case 'create':
+      return user_access('create ead', $account);
+
+    case 'update':
+      return user_access('edit own ead', $account) && $is_author || user_access('edit any ead', $account);
+
+    case 'delete': 
+      return user_access('delete own ead', $account) && $is_author || user_access('delete own ead', $account);
+  }
+}
+
+/**
+ * Implementation of hook_form().
+ */
+
+function ead_form($node) {
+  $type = node_get_types('type', $node);
+  $form['title'] = array(
+    '#type' => 'textfield',
+    '#title' => check_plain($type->title_label),
+    '#required' => TRUE,
+    '#default_value' => $node->title,
+    '#weight' => -5,
+    '#maxlength' => 255,
+  );
+  $form['#attributes'] = array("enctype" => "multipart/form-data");
+  $form['ead'] = array(
+    '#type' => 'file',
+    '#title' => t('EAD File'),
+    '#size' => 40,
+    '#description' => t('Click "Browse..." to select and EAD file to upload.'),
+    '#weight' => -3,
+  );
+  return $form;
+}
+
+/**
+ * Implementation of hook_insert().
+ */
+
+function ead_insert($node) {
+  
+  $node->ead_xml = $form_state['values']['ead'];
+  $node->ead_view = ead_transform($ead_xml);
+  
+  db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_xml) VALUES (%d, %d, %b)",
+           $node->nid, $node->vid, $node->ead_view, $node->ead_xml);
+}         
+
+/**
+ * Implementation of hook_update().
+ */           
+function ead_update($node) {
+  if ($node->revision) {
+    ead_insert($node);
+  }
+  else {
+    db_query("UPDATE {ead} SET finding_aid = '%s' WHERE vid = %d",
+             $node->ead, $node->vid);
+  }
+}
+
+/**
+ * Implementation of hook_delete().
+ */
+function ead_delete(&$node) {
+  db_query('DELETE FROM {ead} WHERE nid = %d', $node->nid);
+}
+
+/**
+ * Implementation of hook_load().
+ */
+function ead_load($node) {
+  return db_fetch_object(db_query('SELECT finding_aid FROM {ead} WHERE vid = %d', $node->vid));
+}
+
+/**
+ * Implementation of hook_view().
+ */
+//TO DO: FINISH!!
+function ead_view($node, $teaser = FALSE, $page = FALSE) {
+  if (!$teaser) {
+    $node = node_prepare($node, $teaser);
+    $node->content['finding-aid'] = array(
+      '#value' => theme('ead_finding-aid', $node),
+      '#weight' => 2
+    );  
+  }
+}        
+//Transform XML for viewing    
+function ead_transform($ead_xml) {
+  $xml_file = simplexml_load_file($ead_xml);
+  $record = $xml_file->ead;
+  $ead = $record->asXML();
+
+  $xslt = new XSLTProcessor();
+  $xsl = new DOMDocument;
+  //TO DO: make this editable through admin settings
+  $xsl->load('eadprint-su.xsl');
+  $xslt->importStyleSheet($xsl);
+
+  $xml = new DOMDocument;
+  $xml->loadXML($ead);
+  $result = $xslt->transformToXML($xml);
+  
+  return $result;
+}
+  
