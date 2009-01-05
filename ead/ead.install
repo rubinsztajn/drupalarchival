@@ -38,14 +38,15 @@ function ead_schema() {
         ),
       'finding_aid' => array(
         'type' => 'text',
-        'size' => 'medium',
+        'size' => 'big',
         'not null' => TRUE,
         'description' => t("Transformed finding aid for display."),
         ),
-      'finding_aid_xml' => array(
-        'type' => 'blob',
-        'size' => 'normal',
-        'description' => t('EAD XML file as binary for downloading'),
+      'finding_aid_filepath' => array(
+        'type' => 'text',
+        'not null' => TRUE,
+        'description' => t('Path to EAD XML file for downloading'),
+        ),
       ),
     'primary key' => array('nid', 'vid'),
     'unique keys' => array(

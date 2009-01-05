@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Transformed with viv2002_4.xsl -->
+
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "http://lcweb2.loc.gov/xmlcommon/dtds/ead2002/ead.dtd">
+
+<ead>
+	<eadheader repositoryencoding="iso15511" relatedencoding="MARC21" countryencoding="iso3166-1" scriptencoding="iso15924" dateencoding="iso8601" langencoding="iso639-2b">
+		<eadid mainagencycode="dlc" countrycode="us" identifier="hdl:loc.afc/eadafc.af005003" encodinganalog="856$u">http://hdl.loc.gov/loc.afc/eadafc.af005003</eadid>
+		<filedesc>
+			<titlestmt>
+				<titleproper encodinganalog="245$a">
+					Art Rosenbaum Georgia Folklore Collection 
+				</titleproper>
+				<subtitle encodinganalog="245$b">
+					<num encodinganalog="090$a">AFC 2000/003</num>
+				</subtitle>
+				<author encodinganalog="245$c">
+					Prepared by Katie Lyn Peebles 
+				</author>
+			</titlestmt>
+			<publicationstmt>
+				<publisher encodinganalog="260$b">
+					<extptr href="lcseal" linktype="simple" show="embed" actuate="onload"/>American Folklife Center, Library of Congress
+				</publisher>
+				<address>
+					<addressline>Washington, D.C.</addressline>
+				</address>
+				<date encodinganalog="260$c" normal="2000-08">August 2000</date>				
+			</publicationstmt>
+			<seriesstmt>
+				<titleproper>Guides to the Collections in the Archive of Folk Culture</titleproper>
+			</seriesstmt>
+		</filedesc>
+		<profiledesc>
+			<creation>Encoded by Judy Ng, <date normal="2005-12">December 2005</date></creation>
+			<langusage encodinganalog="546">Finding aid written in <language encodinganalog="041" langcode="eng">English</language></langusage>
+		</profiledesc>
+	</eadheader>
+
+
+	<archdesc type="register" level="collection" relatedencoding="MARC21">
+		<did>
+        		<head>Collection Summary</head>
+			<unitid label="Collection Number" encodinganalog="090" countrycode="us" repositorycode="dlc">AFC 2000/003</unitid>
+	    		<unittitle label="Title" encodinganalog="245$a">Art Rosenbaum Georgia Folklore Collection
+				<unitdate label="Inclusive Dates" type="inclusive" encodinganalog="245$f" normal="1955/1983">1955-1983</unitdate>
+            		<unitdate label="Bulk Dates" type="bulk" encodinganalog="245$g">1955, 1966, 1976-1983</unitdate>
+			</unittitle>
+            	<repository label="Repository" encodinganalog="852">
+                		<corpname><subarea>Archive of Folk Culture, American Folklife Center</subarea> Library of Congress</corpname>
+		                <address>
+		                    <addressline>Washington, D.C.</addressline>
+                		</address>
+            	</repository>
+            	<physdesc label="Extent (original)">
+                		<extent encodinganalog="300">15 boxes of 236 audiocassette tapes; 1 box of manuscripts and electronic media</extent>
+          		</physdesc>
+			<origination label="Creator">
+				<persname source="lcnaf" encodinganalog="100">Rosenbaum, Art</persname>
+			</origination>    
+    	    		<langmaterial label="Language" encodinganalog="546">
+				<language encodinganalog="041" langcode="eng">English</language>
+			</langmaterial>
+            		<abstract label="Abstract" encodinganalog="520$a">Consists of reference copies of tape recordings made by Art Rosenbaum in north and coastal Georgia principally in the 1970s and early 1980s. These field recordings encompass many genres of acoustic folk music, including gospel, shout, blues, and ballads, and some interviews with the performers. They come from the contexts of home, church, and festival</abstract>
+		</did>
+
+
+		<scopecontent encodinganalog="520">
+			<head>Scope and Content</head>
+				<p>Art Rosenbaum collected these field recordings in north and coastal Georgia between 1976 and 1983. They include many genres of instrumental and vocal folk music and, in addition, oral history interviews with some performers. These recordings were made in homes, churches, and at festivals with the intent of: 1) preserving through duplication the content of deteriorating tapes of local performing traditions; 2) making these recordings accessible to a wider public; and 3) ensuring the continuity of the musical traditions of these performers' ancestors.</p> 
+				<p>Although Rosenbaum made the majority of these recordings in the late 1970s and early 1980s, one tape (GFC 43) is dated from approximately 1955 and was duplicated from a recording by Oscar and Fred Huff. Another tape (GFC 171) was recorded with Joe Heaney in September 1966. Most of the recordings were made in summer and fall, but notably 4 tapes (GFC 319-322) record an Easter celebration in Oglethorpe County. An extensive sequence of tapes (GFC 295-315) was recorded in the Georgia Sea Islands.</p>
+				<p>The Walter J. Brown Media Archives and Peabody Awards Collection at the University of Georgia Libraries holds the original masters, where they were deposited in 1987 by Art Rosenbaum, and the 3-1/4 inch preservation copies that were made recently. A few tapes were not duplicated onto audiocassettes because of their extremely poor condition even after restoration. The Inventory (Folder 2) appended to this guide provides further details.</p>
+				<p>In addition to complete sets of recordings at the Archive of Folk Culture at the American Folklife Center and the University of Georgia Media Archives (Athens, GA 30602), different selections of reference copies from the collection are also held at locations around Georgia. In regions that are represented in the field recordings, the University of Georgia Libraries deposited relevant copies of field tapes at the regional public libraries. The names and addresses of these libraries are included in Folder 3.</p>
+				<p>The Georgia Folklore Collection consists primarily of the field recordings made by Art Rosenbaum and was created when he donated these tapes to the University of Georgia Libraries Media Archives in 1987. However, the Georgia Folklore Collection is currently an open collection and also contains associated collections of sound and video recordings from around Georgia, including those made by the Georgia Folklore Society.</p>
+		</scopecontent>
+
+        	<bioghist encodinganalog="545">
+            		<head>Biographical History</head>
+            		<p>The field collector, Art Rosenbaum, is a professor of art at the Lamar Dodd School of Art at the University of Georgia. He was born in 1938 and received his degrees from Columbia University (A.B. 1960, MFA 1961). He also studied at the Institut d'Art et d'Archéologie in Paris on a Fulbright grant in 1964-65, and has exhibited his drawings and paintings extensively. He has recorded folk musicians throughout the United States, particularly in Georgia, Kentucky, Indiana, Iowa, and New York. Some of his visual art portrays the performers and musical performances represented in his musical collections.</p>
+				<p>Rosenbaum has recently published <title render="italic">Shout Because You're Free: The African American Ring Shout Tradition in Coastal Georgia </title>(F 292 .M15 R67 1998; Margo Newmark Rosenbaum, photographs; Johann S. Buis, music transcriptions and historical essay). This book draws in part from the field recordings of the Georgia Folklore Collection, and also includes subsequent field research. Four recordings that include music from these field recordings are: <title render="italic">Folk Vision and Voices: Traditional Music and Song in Northern Georgia </title>(1983, Folkways FE 34161-34162), <title render="italic">Down Yonder: Old-Time String Band Music from Georgia </title>(1982, Folkways FS 31089), <title render="italic">McIntosh County Shouters: Slave Shout Songs from the Coast of Georgia </title>(1984, Folkways FE 4344), and <title render="italic">Georgia Folk: A Sampler of Traditional Sounds </title>(1990, Global Village SC 03).</p> 
+				<p>The Archive of Folk Culture also holds several other Art Rosenbaum collections, including AFS 17,541-567 (LWO 8487, 1-27). These include reference copies of 19 tapes and original field recordings from the Archives of Traditional Music, Bloomington, Indiana. The AFS 17,541-550 were recorded between 1958 and 1971 in Iowa, Kentucky, Michigan, New York City, Maine, New Hampshire, and Scotland. AFS 17,551-17,567 were duplicated from the original masters at the Archives of Traditional Music, Indiana University, Bloomington, Indiana, where they are numbered 1697-1741. These master tapes were recorded in central and southern Indiana.</p>
+        	</bioghist>
+
+		<controlaccess>
+			<head>Subjects</head>
+				<controlaccess>
+					<head>Names</head>
+						<corpname encodinganalog="610" source="lcnaf" role="subject">Eller Brothers</corpname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Howard Finster</persname>
+						<corpname encodinganalog="610" source="lcnaf" role="subject">McIntosh County Shouters</corpname>
+						<corpname encodinganalog="610" source="lcnaf" role="subject">Bessie Jones and the Georgia Sea Island Singers</corpname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Neal Pattman</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Joe Rakestraw</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Jake Staggers</persname>
+						<persname encodinganalog="600" source="lcnaf" role="subject">Gordon Tanner</persname>
+            		</controlaccess>
+				<controlaccess>
+					<head>Subjects</head>
+						<subject source="lcsh" encodinganalog="650">Ballads</subject>
+						<subject source="lcsh" encodinganalog="650">Banjo music</subject>
+						<subject source="lcsh" encodinganalog="650">Blues (Music) </subject>
+						<subject source="lcsh" encodinganalog="650">Bluegrass music</subject>
+						<subject source="lcsh" encodinganalog="650">Gospel music</subject>
+						<subject source="lcsh" encodinganalog="650">Old time string band</subject>
+						<subject encodinganalog="650">Play songs</subject>
+						<subject source="lcsh" encodinganalog="650">Sacred vocal music</subject>
+						<subject source="lcsh" encodinganalog="650">Work songs</subject>
+				</controlaccess>	
+				<controlaccess>
+					<head>Instruments</head>
+						<subject source="lcsh" encodinganalog="650">Banjo</subject>
+						<subject source="lcsh" encodinganalog="650">Bass</subject>
+						<subject encodinganalog="650">Drums</subject>
+						<subject encodinganalog="650">Fiddle</subject>
+						<subject source="lcsh" encodinganalog="650">Guitar</subject>
+						<subject source="lcsh" encodinganalog="650">Harmonica</subject>
+						<subject source="lcsh" encodinganalog="650">Mandolin</subject>
+						<subject source="lcsh" encodinganalog="650">Piano</subject>
+						<subject source="lcsh" encodinganalog="650">Voice</subject>
+				</controlaccess>		
+		</controlaccess>
+
+		<descgrp type="admininfo">
+		<head>Administrative Information</head>
+		<arrangement encodinganalog="351">
+			<head>Arrangement</head>
+			<p>Sound recordings in this collection are arranged by the original Georgia Folklore Collection (GFC) number.</p>
+		</arrangement>
+
+		<accessrestrict encodinganalog="506">
+            		<head>Access</head>
+            		<p>Listening and viewing access to the collection is unrestricted. Listening copies of the recordings are available at the Folklife Reading Room.  Restrictions may apply concerning the use, duplication, or publication of items in this collection. Consult a reference librarian in the Folklife Reading Room for specific information about this collection.</p>
+        	</accessrestrict>
+
+		<acqinfo encodinganalog="541">
+			<head>Acquisition</head>
+			<p>Art Rosenbaum donated 325 reels of field recordings to the University of Georgia Libraries in 1987. The Media Archives of the University of Georgia Libraries restored the original reel-to-reel tapes and donated a reference set of audiocassettes to the American Folklife Center in January 2000.  David Taylor coordinated the donation from the University of Georgia Libraries Media Archives. Katie Lyn Peebles accessioned, arranged, and processed this collection.</p>
+		</acqinfo>
+
+		<prefercite encodinganalog="524">
+            		<head>Preferred Citation</head>
+            		<p>Art Rosenbaum Georgia Folklore Collection, Archive of Folk Culture, American Folklife Center, Library of Congress, Washington, D.C.</p>
+         	</prefercite>
+
+         	<relatedmaterial>
+			<head>Related Materials</head>
+            		<p><title>Georgia Folklore Collection</title> located in the Walter J. Brown Media Archives, University of Georgia, Athens, Georgia.  Original recordings.</p>
+         	</relatedmaterial>
+		</descgrp>
+
+
+		<dsc type="combined">
+			<head>Container List</head>
+				<c01 level="series">
+					<did>
+					<unittitle>Series I: Manuscripts</unittitle>
+					</did>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-1</container>
+					<unittitle>Collection guide, inventory and correspondence.</unittitle>
+					</did>
+					<scopecontent>
+						<p>Hard copy and disc copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-2</container>
+					<unittitle>Inventory.</unittitle>
+					</did>
+					<scopecontent>
+						<p>Includes descriptions and the column headings Call Number, Artist, Group/ Event/ Title, Date, Recording Location, and Songs.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-3</container>
+					<unittitle>List of Public Libraries.</unittitle>
+					</did>
+					<scopecontent>
+						<p>Includes the names, addresses, phone numbers, directors, and service area of the public libraries receiving copies of the field recordings. Also includes the number of audiocassettes donated, the original number of reel-to-reel tapes duplicated on the audiocassettes, and the locations at which the original masters were recorded.</p>
+					</scopecontent>
+				</c02></c01>
+
+				<c01 level="series">
+					<did>
+					<unittitle>Series II: Sound Recordings</unittitle>
+					</did>
+				<c02 level="file">
+					<did>
+					<container type="box">2</container>
+					<unittitle>GFC 1-23</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">3</container>
+					<unittitle>GFC 24-53</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">4</container>
+					<unittitle>GFC 54-79</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">5</container>
+					<unittitle>GFC 80-107</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">6</container>
+					<unittitle>GFC 108-128</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">7</container>
+					<unittitle>GFC 129-149</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">8</container>
+					<unittitle>GFC 150-172</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">9</container>
+					<unittitle>GFC 173-192</unittitle>
+					</did>
+					<scopecontent>
+						<p>Note: Tape 193 was not transferred to audiocassette copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">10</container>
+					<unittitle>GFC 194-214</unittitle>
+					</did>
+					<scopecontent>
+						<p>Note: Tape 215 was not transferred to audiocassette copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">11</container>
+					<unittitle>GFC 216-237</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">12</container>
+					<unittitle>GFC 238-263</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">13</container>
+					<unittitle>GFC 264-288</unittitle>
+					</did>
+					<scopecontent>
+						<p>Note: Tape 289 was not transferred to audiocassette copy.</p>
+					</scopecontent>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">14</container>
+					<unittitle>GFC 290-307</unittitle>
+					</did>
+				</c02>
+				<c02 level="file">
+					<did>
+					<container type="box">15</container>
+					<unittitle>GFC 308-325</unittitle>
+					</did>
+				</c02></c01>
+
+				<c01 level="series">
+					<did>
+					<unittitle>Series III: Electronic Media</unittitle>
+					</did>
+				<c02 level="file">
+					<did>
+					<container type="box-folder">1-1</container>
+					<unittitle>Collection guide, inventory and correspondence.</unittitle>
+					</did>
+					<scopecontent>
+						<p>1 3.5-inch computer diskette. Contains the Collection Guide and Inventory files.</p>
+					</scopecontent>
+				</c02></c01>
+    		</dsc>
+	</archdesc>
+</ead>

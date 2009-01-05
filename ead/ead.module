@@ -82,7 +82,7 @@ function ead_form($node) {
     '#size' => 40,
     '#description' => t('Click "Browse..." to select and EAD file to upload.'),
     '#weight' => -3,
-  );
+  );  
   return $form;
 }
 
@@ -92,11 +92,12 @@ function ead_form($node) {
 
 function ead_insert($node) {
   
-  $node->ead_xml = $form_state['values']['ead'];
-  $node->ead_view = ead_transform($ead_xml);
-  
-  db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_xml) VALUES (%d, %d, %b)",
-           $node->nid, $node->vid, $node->ead_view, $node->ead_xml);
+  $path = file_directory_path();
+  $file = file_save_upload('ead', $validators);
+  $node->ead_xml = $file->filepath;
+  $node->finding_aid = ead_transform($node->ead_xml);
+  db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')",
+           $node->nid, $node->vid, $node->finding_aid, $node->ead_xml);
 }         
 
 /**
@@ -129,26 +130,45 @@ function ead_load($node) {
 /**
  * Implementation of hook_view().
  */
-//TO DO: FINISH!!
 function ead_view($node, $teaser = FALSE, $page = FALSE) {
   if (!$teaser) {
     $node = node_prepare($node, $teaser);
-    $node->content['finding-aid'] = array(
-      '#value' => theme('ead_finding-aid', $node),
+    $node->content['finding_aid'] = array(
+      '#value' => theme('ead_findingaid', $node),
       '#weight' => 2
     );  
   }
+  if ($teaser) {
+    $node = node_prepare($node, $teaser);
+  }
+  return $node;
 }        
+
+/**
+ * Implementation of hook_theme().
+ */
+function ead_theme() {
+  return array(
+    'ead_findingaid' => array(
+      'arguments' => array('node'),
+    ),
+  );
+}
+
+function theme_ead_findingaid($node) {
+  $output = '<div class="ead_finding_aid">'.
+    check_markup($node->finding_aid). '</div>';
+  return $output;
+}
+
 //Transform XML for viewing    
 function ead_transform($ead_xml) {
   $xml_file = simplexml_load_file($ead_xml);
-  $record = $xml_file->ead;
-  $ead = $record->asXML();
-
+  $ead = $xml_file->asXML();
   $xslt = new XSLTProcessor();
   $xsl = new DOMDocument;
   //TO DO: make this editable through admin settings
-  $xsl->load('eadprint-su.xsl');
+  $xsl->load('sites/all/modules/ead/eadprint-su.xsl');
   $xslt->importStyleSheet($xsl);
 
   $xml = new DOMDocument;
