@@ -36,7 +36,7 @@ function ead_schema() {
         'default' => 0,
         'description' => t("The finding aid's {node_revisions}.vid.")
         ),
-      'finding_aid' => array(
+        'finding_aid' => array(
         'type' => 'text',
         'size' => 'big',
         'not null' => TRUE,

@@ -94,10 +94,11 @@ function ead_insert($node) {
   
   $path = file_directory_path();
   $file = file_save_upload('ead', $validators);
-  $node->ead_xml = $file->filepath;
-  $node->finding_aid = ead_transform($node->ead_xml);
+  $node->finding_aid_filepath = $file->filepath;
+  $node->finding_aid = ead_transform($node->finding_aid_filepath);
+  echo $node->finding_aid;
   db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')",
-           $node->nid, $node->vid, $node->finding_aid, $node->ead_xml);
+           $node->nid, $node->vid, $node->finding_aid, $node->finding_aid_filepath);
 }         
 
 /**
@@ -131,16 +132,12 @@ function ead_load($node) {
  * Implementation of hook_view().
  */
 function ead_view($node, $teaser = FALSE, $page = FALSE) {
-  if (!$teaser) {
-    $node = node_prepare($node, $teaser);
-    $node->content['finding_aid'] = array(
-      '#value' => theme('ead_findingaid', $node),
-      '#weight' => 2
+  $node = node_prepare($node, $teaser);
+  $node->content['finding_aid'] = array(
+    '#value' => theme('ead_finding_aid', $node),
+    '#weight' => 0,
     );  
-  }
-  if ($teaser) {
-    $node = node_prepare($node, $teaser);
-  }
+
   return $node;
 }        
 
@@ -149,15 +146,15 @@ function ead_view($node, $teaser = FALSE, $page = FALSE) {
  */
 function ead_theme() {
   return array(
-    'ead_findingaid' => array(
+    'ead_finding_aid' => array(
       'arguments' => array('node'),
     ),
   );
 }
 
-function theme_ead_findingaid($node) {
-  $output = '<div class="ead_finding_aid">'.
-    check_markup($node->finding_aid). '</div>';
+function theme_ead_finding_aid($node) {
+  $output = '<div class="ead-finding-aid">'.
+   $node->finding_aid. '</div>';
   return $output;
 }
 
