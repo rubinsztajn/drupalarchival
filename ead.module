@@ -1,0 +1,226 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Converts XML EAD encoded finding aids into Drupal nodes.
+ */
+
+/**
+ * Implementation of hook_node_info().
+ */
+
+function ead_node_info() {
+  return array(
+    'ead' => array(
+      'name' => t('Finding Aid'),
+      'module' => 'ead',
+      'description' => t('View an EAD encoded finding aid'),
+      'has_title' => TRUE,
+      'title_label' => t('Title'),
+      'has_body' => FALSE,
+      'locked' => TRUE,
+     )
+   );
+ }
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+
+function ead_menu_alter(&$callbacks) {
+  if (!user_access('administer nodes')) {
+    $callbacks['node/add/ead']['access callback'] = FALSE;
+    unset($callbacks['node/add/ead']['access arguments']);
+  }
+}  
+
+/**
+ * Implementation of hook_perm().
+ */
+
+function ead_perm() {
+  return array('create ead', 'edit own ead', 'edit any ead, delete own ead', 'delete any ead');
+} 
+
+/**
+ * Implementation of hook_access().
+ */
+
+function ead_access($op, $node, $account) {
+  $is_author = $account->uid == $node->uid;
+  switch ($op) {
+    case 'create':
+      return user_access('create ead', $account);
+
+    case 'update':
+      return user_access('edit own ead', $account) && $is_author || user_access('edit any ead', $account);
+
+    case 'delete': 
+      return user_access('delete own ead', $account) && $is_author || user_access('delete own ead', $account);
+  }
+}
+
+/**
+ * Implementation of hook_form().
+ */
+
+function ead_form($node) {
+  $type = node_get_types('type', $node);
+  $form['title'] = array(
+    '#type' => 'textfield',
+    '#title' => check_plain($type->title_label),
+    '#required' => TRUE,
+    '#default_value' => $node->title,
+    '#weight' => -5,
+    '#maxlength' => 255,
+  );
+  $form['#attributes'] = array("enctype" => "multipart/form-data");
+  $form['ead'] = array(
+    '#type' => 'file',
+    '#title' => t('EAD File'),
+    '#size' => 40,
+    '#description' => t('Click "Browse..." to select and EAD file to upload.'),
+    '#weight' => -3,
+  );  
+  return $form;
+}
+
+/**
+ * Implementation of hook_insert().
+ */
+
+function ead_insert($node) {
+  $path = file_directory_path();
+  $file = file_save_upload('ead', $validators);
+  $node->finding_aid_filepath = $file->filepath;
+  $node->finding_aid = ead_transform($node->finding_aid_filepath);
+  echo $node->finding_aid;
+  db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')",
+           $node->nid, $node->vid, $node->finding_aid, $node->finding_aid_filepath);
+}         
+
+/**
+ * Implementation of hook_update().
+ */           
+function ead_update($node) {
+  if ($node->revision) {
+    ead_insert($node);
+  }
+  else {
+    db_query("UPDATE {ead} SET finding_aid = '%s' WHERE vid = %d",
+             $node->ead, $node->vid);
+  }
+}
+
+/**
+ * Implementation of hook_delete().
+ */
+function ead_delete(&$node) {
+  db_query('DELETE FROM {ead} WHERE nid = %d', $node->nid);
+}
+
+/**
+ * Implementation of hook_load().
+ */
+function ead_load($node) {
+  return db_fetch_object(db_query('SELECT finding_aid FROM {ead} WHERE vid = %d', $node->vid));
+}
+
+/**
+ * Implementation of hook_view().
+ */
+function ead_view($node, $teaser = FALSE, $page = FALSE) {
+  $node = node_prepare($node, $teaser);
+  $node->content['finding_aid'] = array(
+    '#value' => theme('ead_finding_aid', $node),
+    '#weight' => 0,
+    );  
+
+  return $node;
+}        
+
+/**
+ * Implementation of hook_theme().
+ */
+function ead_theme() {
+  return array(
+    'ead_finding_aid' => array(
+      'arguments' => array('node'),
+    ),
+  );
+}
+
+function theme_ead_finding_aid($node) {
+  $output = '<div class="ead-finding-aid">'.
+   $node->finding_aid. '</div>';
+  return $output;
+}
+
+/**
+ * Create a LCSH subject based vocabulary for finding aids.
+ */
+function ead_get_vid() {
+  $vid = db_result(db_query("SELECT vid FROM {vocabulary} WHERE module='ead'"));
+  if (!$vid) {
+    $vocabulary = array(
+      'name' => t('Finding Aid Subjects'),
+      'multiple' => '0',        
+      'required' => '0',
+      'hierarchy' => '0',
+      'relations' => '0',
+      'tags' => '0',
+      'module' => 'ead',
+      'nodes' => array(
+        'ead' => 1
+      )
+    );
+    taxonomy_save_vocabulary($vocabulary);
+    $vid = $vocabulary['vid'];
+  }
+  return $vid;
+} 
+
+/**
+ * Save each LCSH subject as taxonomy term.
+ * @param $vid of ead taxonomy
+ * @param $subjects array of subjects from finding aid
+ * Maybe pass in $node object to add taxonomy terms.  
+ */
+function ead_create_subject_term($subjects) {
+  $vid = ead_get_vid();
+  $subjects = ead_get_subjects($);
+  foreach ($subjects as $subject) {
+    $term = array(
+      'name' => $subject,
+      'vid' => $vid,
+      'weight' => '0',
+    );
+    taxonomy_save_term($term);
+  }
+}  
+
+
+//Transform XML for viewing    
+function ead_transform($ead_xml) {
+  $xml_file = simplexml_load_file($ead_xml);
+  $ead = $xml_file->asXML();
+  $xslt = new XSLTProcessor();
+  $xsl = new DOMDocument;
+  //TO DO: make this editable through admin settings
+  $xsl->load('sites/all/modules/ead/eadprint-su.xsl');
+  $xslt->importStyleSheet($xsl);
+
+  $xml = new DOMDocument;
+  $xml->loadXML($ead);
+  $result = $xslt->transformToXML($xml);
+  
+  return $result;
+}
+
+function ead_get_subjects($ead_xml) {
+  $xml_file = simplexml_load_file($ead_xml);
+  $subjects = $xml_file->archdesc->controlaccess;
+  return $subjects;
+}
+  
