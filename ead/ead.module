@@ -91,7 +91,6 @@ function ead_form($node) {
  */
 
 function ead_insert($node) {
-  
   $path = file_directory_path();
   $file = file_save_upload('ead', $validators);
   $node->finding_aid_filepath = $file->filepath;
@@ -158,6 +157,50 @@ function theme_ead_finding_aid($node) {
   return $output;
 }
 
+/**
+ * Create a LCSH subject based vocabulary for finding aids.
+ */
+function ead_get_vid() {
+  $vid = db_result(db_query("SELECT vid FROM {vocabulary} WHERE module='ead'"));
+  if (!$vid) {
+    $vocabulary = array(
+      'name' => t('Finding Aid Subjects'),
+      'multiple' => '0',        
+      'required' => '0',
+      'hierarchy' => '0',
+      'relations' => '0',
+      'tags' => '0',
+      'module' => 'ead',
+      'nodes' => array(
+        'ead' => 1
+      )
+    );
+    taxonomy_save_vocabulary($vocabulary);
+    $vid = $vocabulary['vid'];
+  }
+  return $vid;
+} 
+
+/**
+ * Save each LCSH subject as taxonomy term.
+ * @param $vid of ead taxonomy
+ * @param $subjects array of subjects from finding aid
+ * Maybe pass in $node object to add taxonomy terms.  
+ */
+function ead_create_subject_term($subjects) {
+  $vid = ead_get_vid();
+  $subjects = ead_get_subjects($);
+  foreach ($subjects as $subject) {
+    $term = array(
+      'name' => $subject,
+      'vid' => $vid,
+      'weight' => '0',
+    );
+    taxonomy_save_term($term);
+  }
+}  
+
+
 //Transform XML for viewing    
 function ead_transform($ead_xml) {
   $xml_file = simplexml_load_file($ead_xml);
@@ -173,5 +216,11 @@ function ead_transform($ead_xml) {
   $result = $xslt->transformToXML($xml);
   
   return $result;
+}
+
+function ead_get_subjects($ead_xml) {
+  $xml_file = simplexml_load_file($ead_xml);
+  $subjects = $xml_file->archdesc->controlaccess;
+  return $subjects;
 }
   
