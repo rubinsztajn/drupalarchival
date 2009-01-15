@@ -86,6 +86,8 @@ function ead_form($node) {
   return $form;
 }
 
+
+
 /**
  * Implementation of hook_insert().
  */
@@ -95,7 +97,6 @@ function ead_insert($node) {
   $file = file_save_upload('ead', $validators);
   $node->finding_aid_filepath = $file->filepath;
   $node->finding_aid = ead_transform($node->finding_aid_filepath);
-  echo $node->finding_aid;
   db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')",
            $node->nid, $node->vid, $node->finding_aid, $node->finding_aid_filepath);
 }         
@@ -124,6 +125,10 @@ function ead_delete(&$node) {
  * Implementation of hook_load().
  */
 function ead_load($node) {
+  $path = db_result(db_query('SELECT finding_aid_filepath FROM {ead} WHERE nid = %d', $node->nid));
+  $subjects = ead_get_subjects($path);
+  $tids = ead_create_subject_term($node, $subjects);
+  ead_save_term_node($node, $tids);
   return db_fetch_object(db_query('SELECT finding_aid FROM {ead} WHERE vid = %d', $node->vid));
 }
 
@@ -183,22 +188,29 @@ function ead_get_vid() {
 
 /**
  * Save each LCSH subject as taxonomy term.
- * @param $vid of ead taxonomy
  * @param $subjects array of subjects from finding aid
  * Maybe pass in $node object to add taxonomy terms.  
  */
-function ead_create_subject_term($subjects) {
+function ead_create_subject_term($node, $subjects) {
   $vid = ead_get_vid();
-  $subjects = ead_get_subjects($);
-  foreach ($subjects as $subject) {
+  foreach ($subjects->subject as $subject) {
     $term = array(
       'name' => $subject,
       'vid' => $vid,
       'weight' => '0',
     );
     taxonomy_save_term($term);
+    $tids = array();
+    $tids[] = db_result(db_query("SELECT tid FROM {term_data} WHERE name = '%s'", $term));
   }
+  return $tids;
 }  
+
+function ead_save_term_node($node, $tids) {
+  foreach ($tids as $tid) {
+    db_query("INSERT INTO {term_node} (nid, vid, tid) VALUES (%d, %d, %d)", $node->nid, $node->vid, $term);
+  }
+}
 
 
 //Transform XML for viewing    
