@@ -97,8 +97,13 @@ function ead_insert($node) {
   $file = file_save_upload('ead', $validators);
   $node->finding_aid_filepath = $file->filepath;
   $node->finding_aid = ead_transform($node->finding_aid_filepath);
-  db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')",
-           $node->nid, $node->vid, $node->finding_aid, $node->finding_aid_filepath);
+  db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')", $node->nid, $node->vid, $node->finding_aid, $node->finding_aid_filepath);
+
+  $subjects = ead_get_subjects($node->finding_aid_filepath);
+  if ($subjects) {
+    $tids = ead_create_subject_term($node, $subjects);
+    ead_save_term_node($node, $tids);
+  }
 }         
 
 /**
@@ -125,10 +130,6 @@ function ead_delete(&$node) {
  * Implementation of hook_load().
  */
 function ead_load($node) {
-  $path = db_result(db_query('SELECT finding_aid_filepath FROM {ead} WHERE nid = %d', $node->nid));
-  $subjects = ead_get_subjects($path);
-  $tids = ead_create_subject_term($node, $subjects);
-  ead_save_term_node($node, $tids);
   return db_fetch_object(db_query('SELECT finding_aid FROM {ead} WHERE vid = %d', $node->vid));
 }
 
@@ -193,22 +194,28 @@ function ead_get_vid() {
  */
 function ead_create_subject_term($node, $subjects) {
   $vid = ead_get_vid();
+  $tids = array();
   foreach ($subjects->subject as $subject) {
-    $term = array(
-      'name' => $subject,
-      'vid' => $vid,
-      'weight' => '0',
-    );
-    taxonomy_save_term($term);
-    $tids = array();
-    $tids[] = db_result(db_query("SELECT tid FROM {term_data} WHERE name = '%s'", $term));
+    $term = taxonomy_get_term_by_name($subject);
+    if (!$term) {
+      $term = array(
+        'name' => $subject,
+        'vid' => $vid,
+        'weight' => '0',
+      );
+      taxonomy_save_term($term);
+      $tids[] = db_result(db_query("SELECT tid FROM {term_data} WHERE name = '%s'", $subject));
+    }  
+    if ($term) {
+      $tids[] = $term->tid;
+    }  
   }
   return $tids;
 }  
 
 function ead_save_term_node($node, $tids) {
   foreach ($tids as $tid) {
-    db_query("INSERT INTO {term_node} (nid, vid, tid) VALUES (%d, %d, %d)", $node->nid, $node->vid, $term);
+    db_query("INSERT INTO {term_node} (nid, vid, tid) VALUES (%d, %d, %d)", $node->nid, $node->vid, $tid);
   }
 }
 
@@ -220,7 +227,7 @@ function ead_transform($ead_xml) {
   $xslt = new XSLTProcessor();
   $xsl = new DOMDocument;
   //TO DO: make this editable through admin settings
-  $xsl->load('sites/all/modules/ead/eadprint-su.xsl');
+  $xsl->load('sites/all/modules/ead/misc/eadprint-su.xsl');
   $xslt->importStyleSheet($xsl);
 
   $xml = new DOMDocument;

@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="print.xsl" type="text/xsl"?>
+
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD) Version 2002)//EN" "/home/aaron/dtds/ead2002/ead.dtd">
+
+<ead>
+<eadheader langencoding="iso639-2b" countryencoding="iso3166-1" dateencoding="iso8601" repositoryencoding="iso15511" scriptencoding="iso15924" audience="internal" id="head" relatedencoding="MARC21">
+
+<eadid publicid="-//us::mu//TEXT us::mu::mums463.xml//EN" countrycode="us" mainagencycode="mu">mums463</eadid>
+
+<filedesc>
+<titlestmt>
+<titleproper encodinganalog="245$a">
+G. Clifford Stamper Papers, 1943-1955
+</titleproper>
+<subtitle>Finding Aid</subtitle>
+<author encodinganalog="245$c">Ryan B. Lafond</author>
+</titlestmt>
+<publicationstmt>
+<publisher encodinganalog="260$b">Special Collections and University Archives</publisher>
+<address>
+<addressline>W.E.B. Du Bois Library</addressline>
+<addressline>University of Massachusetts Amherst</addressline>
+<addressline>Amherst, MA</addressline>
+</address>
+<date encodinganalog="260$c" normal="2007">2007</date>
+<p>University of Massachusetts Amherst. All rights reserved.</p>
+</publicationstmt>
+</filedesc>
+
+
+<profiledesc>
+<creation encodinganalog="500">Finding aid encoded in NoteTab Pro. Encoded by Danielle Kovacs.
+<date>2007-04-27</date>
+</creation>
+<langusage>Finding aid written in
+<language encodinganalog="546" langcode="eng" scriptcode="latn">English</language>
+</langusage>
+</profiledesc>
+</eadheader>
+
+
+<frontmatter id="front"> 
+<titlepage>
+<publisher>Special Collections and University Archives
+<lb/>W.E.B. Du Bois Library
+<lb/>University of Massachusetts Amherst</publisher>
+
+<titleproper>G. Clifford Stamper Papers, 1943-1955</titleproper>
+<subtitle>Finding Aid</subtitle>
+<num>MS 463</num> 
+<author>Ryan B. Lafond</author> 
+<date>December 2006</date>
+
+<p>2007 University of Massachusetts Amherst. All rights reserved.</p> 
+</titlepage> 
+</frontmatter> 
+
+
+<archdesc level="collection" relatedencoding="MARC21">
+<did id="main">
+<origination label="Creator:">
+<persname source="lcnaf" encodinganalog="100 1">Stamper, G. Clifford (George Clifford), 1912-2005</persname>
+</origination>
+<unittitle label="Title:" encodinganalog="245$a">G. Clifford Stamper Papers</unittitle>
+<unitdate type="inclusive" label="Dates:" normal="1943/1955">1943-1955</unitdate>
+<unitdate type="bulk" encodinganalog="245$g" normal="1943/1945">1943-1945</unitdate>
+<unitid label="Collection Number:" encodinganalog="099" countrycode="us" repositorycode="mu">MS 463</unitid>
+<physdesc label="Quantity:">
+<extent encodinganalog="300$a">2 boxes</extent>
+<extent encodinganalog="300$a">(0.75 linear ft.)</extent>
+</physdesc>
+<langmaterial label="Language of Material:" encodinganalog="546"><language langcode="eng">English</language></langmaterial>
+
+<repository label="Location:">
+<corpname>Special Collections and University Archives, W.E.B. Du Bois Library, University of Massachusetts Amherst</corpname>
+<address>
+<addressline>Amherst, MA</addressline>
+</address>
+</repository>
+<abstract encodinganalog="520$a" label="Abstract:">
+George Clifford Stamper was a movie projectionist in the 4th Special Services during World War II.  Born and raised in Somerville, Massachusetts, he enlisted in the U.S. Army on September 1, 1943 and participated in the European Theater from April 6, 1944 until December 12, 1945, when he was sent home and then honorably discharged in January 1946.  The papers of G. Clifford Stamper consist primarily of his incoming and outgoing letters during his training and service from 1943-1945. Correspondence is mostly with his family, but also includes his letters with neighbors, as well as friends that were serving.  The collection contains, too, Stamper's post-war letters received from 1946-1955.  In addition, the outgoing letters of James C. Doyle, Jr. during his service in the U.S. Marines from 1958-1959 are a part of this collection.  Doyle's connection to Stamper is unclear.
+</abstract>
+</did>
+
+
+
+<bioghist id="bioghist">
+
+<p>George Clifford Stamper was born on October 13, 1912 in Somerville, Massachusetts to George A. and Miriam Stamper.  He enlisted in the U.S. Army on September 1, 1943 at the age of 30 and spent a week at Fort Devens in Ayer, Massachusetts.  He went on to train at Camp Crowder in Joplin, Missouri until February 1944, then to Camp Reynolds in Greenville, Pennsylvania until March 1944, and finally arrived in Scotland on the S.S. Queen Mary April 6, 1944.  He participated in the European Theater as a member of the 4th Special Services as a movie projectionist and served in England, France, Luxembourg, Germany, and Czechoslovakia.</p>
+
+<p>The majority of Stamper's letters are to the three family members that he lived with at home: George A. Stamper, his father, who is referred to as G.A.S.; Walter A. Burnham, his first cousin born in 1893, who is referred to as W.A.B.; and Ella F. Davis, who is referred to as E.F.D.  Her connection to the author of this collection is unknown, but it can be surmised from the letters that she is perhaps in a relationship with Walter A. Burnham.  Regardless, she is the author of nearly every letter written to Stamper by his family.  There are only a handful of letters written directly by his father, who notes his poor writing abilities, and none written by Burnham; this is partly due to the fact not every letter is accounted for, but also appears to have been the norm.  Stamper makes note of this in a letter written on March 20, 1945, writing, "Isn't it about time for W.A.B.'s yearly comment?"</p>
+
+<p>The correspondence between Stamper and his family provides an interesting look at the duties of an atypical World War II soldier.  The Special Services Division consisted of the Army Exchange Service, Army Athletic &amp; Recreation Service, and the Motion Picture Service, to which Stamper belonged.  At the height of its operation in Europe during World War II, the Army Motion Picture Service had 1,190 theaters in operation, seating a total of 789,900 people.  The 4th Special Service Company is officially given credit with the occupation of Germany from May 2 to October 31, 1945.  Furthermore, the company is credited with participation in four campaigns: Northern France, Ardennes-Alsace, Central Europe, and the Rhineland.  Stamper would spend a large amount of his time traveling to various units around him to show several movies a day.</p>
+
+<p>Due to the heavy censorship placed on the soldiers, Stamper is unable to provide considerable details about his duties or location through most of his correspondence, he is only able to vaguely date his letters with "Somewhere in France" or "Somewhere in Luxembourg."  Regardless, Stamper is very conscious of the importance of properly recording and preserving his experiences in Europe.  He and his family number all the letters they write and after a length of time Stamper sends home bundles of his old mail.  At certain points Stamper also sends home maps of the different countries he has been in, along with the name of the biggest town near where he was so his family could see where he has been.  He also sends home the different currencies he comes into contact with during his occupation of different countries, along with a description of the conversion rate.  In addition, Stamper sends home all his pay in the form of money orders, and once he receives confirmation of their safe arrival, he then sends home the receipts.</p>
+
+<p>Despite the censorship, Stamper is able to discuss many fascinating observations during his time in Europe.  While in France, he notes in a letter dated September 27, 1944 that he sees women with all their hair cut off as a retaliatory response for being "too friendly with the Germans."  Stamper notes that the people in Metz were German sympathizers "to a great extent" and gave Allied soldiers dirty looks, as opposed to the people in Luxembourg, who "smile and say good morning."   While in Czechoslovakia during May 1945, he sees huge groups of German soldiers taking themselves to prison of war camps with trucks, cars, motorcycles, and bicycles with few, if any, guards.  He also notes that some of the German soldiers have rifles and most of the officers he saw still had their pistols.  He and his fellow soldiers sardonically refer to such groups of marching Germans as "parades."  Stamper also notes on a few occasions the severity of the destruction of many of the areas in France.  In these observations he suggests that it would probably be better for them to just leave the rubble and rebuild somewhere else.</p>
+
+<p>The experience of the war at home can be seen in various ways through the letters from Stamper's family and neighbors.  On several occasions his family mentions the different items that are being rationed, such as oil and gas.  At one point Ella Davis writes that they can get so little gas that they are considering selling their car.  They also make note of the amounts of butter they are able to get, usually by the pound.  Little is expressed by way of an opinion about the war itself; neighbors and family alike wish for Stamper to return soon, and particularly strong sentiments are expressed in the letters written by Stamper's father.  Stamper's father works at the Red Cross tending to the furnace in a particular building, and his cousin's work is unspecified but clearly keeps him very busy, according to Davis.  Davis spends significant amounts of time baking various items to send to Stamper and other family friends serving abroad.</p>
+
+<p>After the unconditional surrender of Germany on May 7, 1945, Stamper spends most of his time discussing how his conditions have changed.  For one, he makes note of how he and the other soldiers are being rationed better food, like fruit cake.  He also begins taking an interest in sending home a series of maps detailing his personal history.  It is unknown exactly how many Stamper sent back, but there were at least six.  Around October 1945 is when he begins to search for ways to come home by switching into different units; however, this process is severely held up by a longshoremen strike in New York.  On December 12, 1945 Stamper leaves for the United States from the port of Marseilles on a troop transport.  He notes that everyone he is sailing with is desperately looking forward to "the blessed event" of going to the Separation Center to get discharged.  Stamper arrived at Newport News, Virginia on Christmas Eve, and expected to head to Fort Devens within a week, according to his last letter written home.</p>
+
+<p>George Clifford Stamper died on January 13, 2005 at the age of 93.</p>
+
+
+</bioghist>
+
+
+<scopecontent id="scope">
+<p>The letters Stamper wrote to his family are the only letters he authored that are part of the collection.  Consequently, the substance of any of the letters Stamper wrote to his friends both during the war and after he returned must be inferred by the content of their various responses.  Thus, only a limited understanding of the dynamics of Stamper's various relationships with non-family members, and what he shared with them, is available.</p>
+
+<p>During the war, Stamper's friends seemed interested in sharing their various war experiences, such as one friend in the Pacific who catches an unknown disease.  This friend, Freddie Warren, gives valuable insight into a common soldier's perception of what they are doing, particularly in the instances where he expresses his hope that neither of them has to carry a Purple Heart home.  The various people at home that Stamper receives letters from provide for an interesting view of how the war affected the lives of those in the United States, with the most common thread between the various writers being that life goes on.  Most every non-soldier Stamper receives letters from discusses the weather, how different people are in school, or how they are doing at work.</p>
+
+<p>Stamper's unique position as a member of the Special Services serves as a non-traditional view of World War II.  This position provides for a very sterile view of the war as expressed in his letters to his family.  He takes more of an interest in recording his travels and observations than giving his opinion on the war.  One of the most significant examples of this is seen in a letter he wrote on June 6, 1945, in which he literally accounts for his time by providing a detailed list of exactly where he has been from boot camp to the present.  It should be noted that very few of the items Stamper sent home are actually part of this collection; the only non-letter items are a photograph of his friend William Avalon and his wife, a couple of money order receipts, some newsclippings of local news sent to Stamper by his family, and a curiously placed boating chart.</p>
+
+</scopecontent>
+
+
+
+<accessrestrict id="admin-access">
+<p>The collection is open for research.</p>
+</accessrestrict>
+
+
+
+<prefercite id="admin-cite">
+<p>Please use the following format when citing materials from this collection:</p>
+<p>G. Clifford Stamper Papers (MS 463). Special Collections and University Archives, W.E.B. Du Bois Library, University of Massachusetts Amherst. </p>
+</prefercite>
+
+<acqinfo id="admin-acqinfo">
+<p>Purchased from Zachary Jones in April 2006.</p> 
+</acqinfo>
+
+
+
+<relatedmaterial id="add-related">
+<p>For other personal accounts of service during World War II in the Special Collections and University Archives, see:
+<list>
+<item>
+<extref href="http://asteria.fivecolleges.edu/findaids/umass/mu237.html">William Manchester Papers (MS 433)</extref></item>
+<item>Wayne G. Sharpe Papers (MS 462)</item>
+</list></p>
+</relatedmaterial>
+
+
+<processinfo><p>Processed by Ryan B. Lafond, 2007.</p></processinfo>
+
+
+<controlaccess id="subj">
+<persname encodinganalog="600" source="lcnaf">Doyle, James C.</persname>
+<persname encodinganalog="600" source="lcnaf">Stamper, G. Clifford (George Clifford), 1912-2005</persname> 
+<corpname encodinganalog="610" source="lcsh">United States. Army Service Forces. Special Services Division</corpname>
+<subject encodinganalog="650" source="lcsh">World War, 1939-1945</subject>
+<subject encodinganalog="650" source="lcsh">World War, 1939-1945--Campaigns--Czechoslovakia</subject>
+<subject encodinganalog="650" source="lcsh">World War, 1939-1945--Campaigns--France</subject>
+<genreform encodinganalog="655" source="aat">Letters (Correspondence)</genreform>
+</controlaccess>
+
+
+
+<dsc type="in-depth">
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">1</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1943 Nov</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">2</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1943 Dec</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">3</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1944 Jan</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">4</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1944 Feb</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">5</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1944 Mar</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">6</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1944 Apr-May</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">7</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1944 June-Aug</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">8</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1944 Oct-Dec</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">9</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1945 Jan-Feb</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">10</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1945 Mar-June</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">11</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1945 Aug-Sept</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">12</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1945 Oct-Nov</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">13</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1946</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">14</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1947</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">15</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1948</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">16</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1949</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">17</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1950</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">18</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1951</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">19</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1952</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">20</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1953</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">21</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1954 Apr-June</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">22</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1954 Aug-Nov</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">23</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Incoming letters</unittitle>
+<unitdate>1955</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">24</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1943 Sept-Nov</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">25</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1943 Dec</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">26</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1944 Jan-Feb</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">1</container>
+<container type="folder">27</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1944 Mar-July</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">1</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1944 Aug-Sept</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">2</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1944 oct-Dec</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">3</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 Feb</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">4</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 Mar</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">5</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 Apr</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">6</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 May</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">7</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 June-July</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">8</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>Aug-Sept</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">9</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 Oct</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">10</container>
+<origination>Stamper, G. Clifford</origination>
+<unittitle>Outgoing letters</unittitle>
+<unitdate>1945 Nov-Dec</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">11</container>
+<origination>Doyle, James C., Jr.</origination>
+<unittitle>Correspondence</unittitle>
+<unitdate>1958</unitdate>
+</did>
+</c01>
+
+<c01>
+<did>
+<container type="box">2</container>
+<container type="folder">12</container>
+<origination>Doyle, James C., Jr.</origination>
+<unittitle>Correspondence</unittitle>
+<unitdate>1959</unitdate>
+</did>
+</c01>
+
+
+
+</dsc>
+
+
+</archdesc>
+</ead>
