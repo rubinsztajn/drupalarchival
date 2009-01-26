@@ -36,6 +36,23 @@ function ead_menu_alter(&$callbacks) {
 }  
 
 /**
+ * Implementation of hook_menu
+ */
+function ead_menu() {
+  $items['admin/settings/ead'] = array(
+    'title' => 'Finding Aid Settings',
+    'description' => 'Configure how finding aids are displayed',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('ead_admin_settings'),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'ead.admin.inc',
+  );
+  
+  return $items;
+}
+
+/**
  * Implementation of hook_perm().
  */
 
@@ -94,18 +111,20 @@ function ead_form($node) {
 
 function ead_insert($node) {
   $path = file_directory_path();
-  $file = file_save_upload('ead', $validators);
+  $file = file_save_upload('ead', $validators, $path);
   $node->finding_aid_filepath = $file->filepath;
   $node->finding_aid = ead_transform($node->finding_aid_filepath);
   db_query("INSERT INTO {ead} (nid, vid, finding_aid, finding_aid_filepath) VALUES (%d, %d, '%s', '%s')", $node->nid, $node->vid, $node->finding_aid, $node->finding_aid_filepath);
-
-  $subjects = ead_get_subjects($node->finding_aid_filepath);
-  if ($subjects) {
-    $tids = ead_create_subject_term($node, $subjects);
-    ead_save_term_node($node, $tids);
-  }
-}         
-
+  // Grab lcsh subject headings from ead file and save as taxonomy terms
+  $get_subjects = variable_get('ead_taxonomy_option', 0);
+  if ($get_subjects) {
+    $subjects = ead_get_subjects($node->finding_aid_filepath);
+    if ($subjects) {
+      $tids = ead_create_subject_term($node, $subjects);
+      ead_save_term_node($node, $tids);
+    }
+  }         
+}
 /**
  * Implementation of hook_update().
  */           
@@ -197,6 +216,9 @@ function ead_create_subject_term($node, $subjects) {
   $tids = array();
   foreach ($subjects->subject as $subject) {
     $term = taxonomy_get_term_by_name($subject);
+    if ($term) {
+      $tids[] = $term[0]->tid;
+    }
     if (!$term) {
       $term = array(
         'name' => $subject,
@@ -206,10 +228,8 @@ function ead_create_subject_term($node, $subjects) {
       taxonomy_save_term($term);
       $tids[] = db_result(db_query("SELECT tid FROM {term_data} WHERE name = '%s'", $subject));
     }  
-    if ($term) {
-      $tids[] = $term->tid;
-    }  
   }
+
   return $tids;
 }  
 
